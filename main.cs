@@ -21,12 +21,18 @@ namespace Two_tier_Application
         {
             if (textBox1.Text=="Admin" && textBox2.Text == "123")
             {
-                
+                button2.Visible=true;
+                button3.Visible = true;
             }
             else
             {
                 MessageBox.Show("輸入錯誤!");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

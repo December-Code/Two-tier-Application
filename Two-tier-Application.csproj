@@ -49,6 +49,16 @@
     <Compile Include="LongMeter_DataDataSet.cs">
       <DependentUpon>LongMeter_DataDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LongMeter_DataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LongMeter_DataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LongMeter_Members.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LongMeter_Members.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Machine_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +109,17 @@
     <None Include="LongMeter_DataDataSet.xss">
       <DependentUpon>LongMeter_DataDataSet.xsd</DependentUpon>
     </None>
+    <None Include="LongMeter_DataDataSet1.xsc">
+      <DependentUpon>LongMeter_DataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_DataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LongMeter_DataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LongMeter_DataDataSet1.xss">
+      <DependentUpon>LongMeter_DataDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="LongMeter_Machine.xsc">
       <DependentUpon>LongMeter_Machine.xsd</DependentUpon>
     </None>
@@ -109,6 +130,17 @@
     </None>
     <None Include="LongMeter_Machine.xss">
       <DependentUpon>LongMeter_Machine.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_Members.xsc">
+      <DependentUpon>LongMeter_Members.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_Members.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LongMeter_Members.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LongMeter_Members.xss">
+      <DependentUpon>LongMeter_Members.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
