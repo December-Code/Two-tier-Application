@@ -8,9 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
 namespace Two_tier_Application.Properties
 {
+
+
     /// <summary>
     ///   用於查詢當地語系化字串等的強類型資源類別
     /// </summary>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1FA6A32E-3C19-40F7-BA86-6763353D0682}</ProjectGuid>
+    <ProjectGuid>{2E3FE321-71CF-4F77-AC4D-F452E429AD2A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Two_tier_Application</RootNamespace>
-    <AssemblyName>Two-tier Application</AssemblyName>
+    <AssemblyName>Two-tier-Application</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,26 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business_dataDataSet.Designer.cs">
+    <Compile Include="LongMeter_DataDataSet.cs">
+      <DependentUpon>LongMeter_DataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LongMeter_DataDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Business_dataDataSet.xsd</DependentUpon>
+      <DependentUpon>LongMeter_DataDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Business_dataDataSet1.Designer.cs">
+    <Compile Include="LongMeter_Members.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Business_dataDataSet1.xsd</DependentUpon>
+      <DependentUpon>LongMeter_Members.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Machine_User.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Machine_User.Designer.cs">
+      <DependentUpon>Machine_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LongMeter_DataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LongMeter_DataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LongMeter_Machine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LongMeter_Machine.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Machine_User.resx">
+      <DependentUpon>Machine_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,27 +98,49 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Business_dataDataSet.xsc">
-      <DependentUpon>Business_dataDataSet.xsd</DependentUpon>
+    <None Include="LongMeter_DataDataSet.xsc">
+      <DependentUpon>LongMeter_DataDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Business_dataDataSet.xsd">
+    <None Include="LongMeter_DataDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Business_dataDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>LongMeter_DataDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Business_dataDataSet.xss">
-      <DependentUpon>Business_dataDataSet.xsd</DependentUpon>
+    <None Include="LongMeter_DataDataSet.xss">
+      <DependentUpon>LongMeter_DataDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Business_dataDataSet1.xsc">
-      <DependentUpon>Business_dataDataSet1.xsd</DependentUpon>
+    <None Include="LongMeter_DataDataSet1.xsc">
+      <DependentUpon>LongMeter_DataDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="Business_dataDataSet1.xsd">
+    <None Include="LongMeter_DataDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Business_dataDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>LongMeter_DataDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Business_dataDataSet1.xss">
-      <DependentUpon>Business_dataDataSet1.xsd</DependentUpon>
+    <None Include="LongMeter_DataDataSet1.xss">
+      <DependentUpon>LongMeter_DataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_Machine.xsc">
+      <DependentUpon>LongMeter_Machine.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_Machine.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LongMeter_Machine.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LongMeter_Machine.xss">
+      <DependentUpon>LongMeter_Machine.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_Members.xsc">
+      <DependentUpon>LongMeter_Members.xsd</DependentUpon>
+    </None>
+    <None Include="LongMeter_Members.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LongMeter_Members.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LongMeter_Members.xss">
+      <DependentUpon>LongMeter_Members.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
