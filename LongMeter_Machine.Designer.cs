@@ -1030,7 +1030,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, ti" +
@@ -1038,28 +1038,44 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT  Machine_id, category_id, location_id, price, payment, title, condition, D" +
-                "river_id, years\r\nFROM      Machines\r\nWHERE   (category_id LIKE @keyword)";
+            this._commandCollection[1].CommandText = @"INSERT INTO Machines
+                   (Machine_id, category_id, location_id, price, payment, title, condition, years, Driver_id)
+VALUES      (@Machine_id,@category_id,@location_id,@price,@payment,@title,@condition,@years,@Driver_id);  
+SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition FROM Machines WHERE (Machine_id = @Machine_id)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "category_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Machine_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Machine_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@category_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "category_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@price", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@payment", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "payment", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@title", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@condition", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "condition", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@years", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "years", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Driver_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Driver_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "SELECT  Machine_id, category_id, location_id, price, payment, title, condition, D" +
-                "river_id, years\r\nFROM      Machines\r\nWHERE   (Machine_id LIKE @keyword)";
+                "river_id, years\r\nFROM      Machines\r\nWHERE   (category_id LIKE @keyword)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Machine_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "category_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "SELECT  Machine_id, category_id, location_id, price, payment, title, condition, D" +
-                "river_id, years\r\nFROM      Machines\r\nWHERE   (price LIKE @keyword)";
+                "river_id, years\r\nFROM      Machines\r\nWHERE   (Machine_id LIKE @keyword)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Machine_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
             this._commandCollection[4].CommandText = "SELECT  Machine_id, category_id, location_id, price, payment, title, condition, D" +
-                "river_id, years\r\nFROM      Machines\r\nWHERE   (title LIKE @keyword)";
+                "river_id, years\r\nFROM      Machines\r\nWHERE   (price LIKE @keyword)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "SELECT  Machine_id, category_id, location_id, price, payment, title, condition, D" +
+                "river_id, years\r\nFROM      Machines\r\nWHERE   (title LIKE @keyword)";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1091,7 +1107,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int Category_id_Search(LongMeter_Machine.MachinesDataTable dataTable, int keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(keyword));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1105,7 +1121,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual LongMeter_Machine.MachinesDataTable Category_id_Search_G(int keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(keyword));
             LongMeter_Machine.MachinesDataTable dataTable = new LongMeter_Machine.MachinesDataTable();
             this.Adapter.Fill(dataTable);
@@ -1117,7 +1133,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int Machine_id_Search(LongMeter_Machine.MachinesDataTable dataTable, int keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(keyword));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1131,7 +1147,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual LongMeter_Machine.MachinesDataTable Machine_id_Search_G(int keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(keyword));
             LongMeter_Machine.MachinesDataTable dataTable = new LongMeter_Machine.MachinesDataTable();
             this.Adapter.Fill(dataTable);
@@ -1143,7 +1159,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int Price_Search(LongMeter_Machine.MachinesDataTable dataTable, double keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand = this.CommandCollection[4];
             this.Adapter.SelectCommand.Parameters[0].Value = ((double)(keyword));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1157,7 +1173,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual LongMeter_Machine.MachinesDataTable Price_G_Search(double keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand = this.CommandCollection[4];
             this.Adapter.SelectCommand.Parameters[0].Value = ((double)(keyword));
             LongMeter_Machine.MachinesDataTable dataTable = new LongMeter_Machine.MachinesDataTable();
             this.Adapter.Fill(dataTable);
@@ -1169,7 +1185,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int Title_Search(LongMeter_Machine.MachinesDataTable dataTable, string keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((keyword == null)) {
                 throw new global::System.ArgumentNullException("keyword");
             }
@@ -1188,7 +1204,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual LongMeter_Machine.MachinesDataTable Title_Search_G(string keyword) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((keyword == null)) {
                 throw new global::System.ArgumentNullException("keyword");
             }
@@ -1434,6 +1450,63 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int category_id, global::System.Nullable<int> Driver_id, int location_id, global::System.Nullable<int> years, double price, string payment, string title, string condition, int Original_Machine_id, int Original_category_id, global::System.Nullable<int> Original_Driver_id, int Original_location_id, global::System.Nullable<int> Original_years, double Original_price, string Original_payment) {
             return this.Update(Original_Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition, Original_Machine_id, Original_category_id, Original_Driver_id, Original_location_id, Original_years, Original_price, Original_payment);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int Add_Machine(int Machine_id, int category_id, int location_id, double price, string payment, string title, string condition, global::System.Nullable<int> years, global::System.Nullable<int> Driver_id) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(Machine_id));
+            command.Parameters[1].Value = ((int)(category_id));
+            command.Parameters[2].Value = ((int)(location_id));
+            command.Parameters[3].Value = ((double)(price));
+            if ((payment == null)) {
+                throw new global::System.ArgumentNullException("payment");
+            }
+            else {
+                command.Parameters[4].Value = ((string)(payment));
+            }
+            if ((title == null)) {
+                throw new global::System.ArgumentNullException("title");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(title));
+            }
+            if ((condition == null)) {
+                throw new global::System.ArgumentNullException("condition");
+            }
+            else {
+                command.Parameters[6].Value = ((string)(condition));
+            }
+            if ((years.HasValue == true)) {
+                command.Parameters[7].Value = ((int)(years.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Driver_id.HasValue == true)) {
+                command.Parameters[8].Value = ((int)(Driver_id.Value));
+            }
+            else {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

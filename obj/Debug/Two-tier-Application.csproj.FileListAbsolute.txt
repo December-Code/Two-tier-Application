@@ -8,8 +8,13 @@ S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.cspr
 S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csproj.CoreCompileInputs.cache
 S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.exe
 S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.pdb
+P:\Graduate School\Softengineering\HW5\Two-tier-Application\bin\Debug\Two-tier-Application.exe.config
+P:\Graduate School\Softengineering\HW5\Two-tier-Application\bin\Debug\Two-tier-Application.exe
+P:\Graduate School\Softengineering\HW5\Two-tier-Application\bin\Debug\Two-tier-Application.pdb
 P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csprojAssemblyReference.cache
 P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two_tier_Application.Form1.resources
+P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two_tier_Application.Properties.Resources.resources
 P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csproj.GenerateResource.cache
+P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csproj.CoreCompileInputs.cache
 P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.exe
 P:\Graduate School\Softengineering\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.pdb

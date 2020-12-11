@@ -34,7 +34,7 @@ namespace Two_tier_Application
 
         }
 
-        private void machine_id_SearchToolStripButton_Click(object sender, EventArgs e)
+        private void Machine_id_SearchToolStripButton_Click(object sender, EventArgs e)
         {
             if (toolStripComboBox.Text == "Machine_id")
             {
@@ -51,7 +51,7 @@ namespace Two_tier_Application
             {
                 try
                 {
-                    this.machinesTableAdapter1.category_id_Search(this.longMeter_Machine.Machines, ((int)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(int)))));
+                    this.machinesTableAdapter1.Category_id_Search(this.longMeter_Machine.Machines, ((int)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(int)))));
                 }
                 catch (System.Exception ex)
                 {
@@ -62,7 +62,7 @@ namespace Two_tier_Application
             {
                 try
                 {
-                    this.machinesTableAdapter1.price_Search(this.longMeter_Machine.Machines, ((double)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(double)))));
+                    this.machinesTableAdapter1.Price_Search(this.longMeter_Machine.Machines, ((double)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(double)))));
                 }
                 catch (System.Exception ex)
                 {
@@ -73,7 +73,7 @@ namespace Two_tier_Application
             {
                 try
                 {
-                    this.machinesTableAdapter1.title_Search(this.longMeter_Machine.Machines, keywordToolStripTextBox.Text);
+                    this.machinesTableAdapter1.Title_Search(this.longMeter_Machine.Machines, keywordToolStripTextBox.Text);
                 }
                 catch (System.Exception ex)
                 {
@@ -83,6 +83,11 @@ namespace Two_tier_Application
         }
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
