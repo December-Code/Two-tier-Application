@@ -94,6 +94,30 @@ namespace Two_tier_Application
                titleTextBox.Text,
                conditionTextBox.Text
                );
+            MessageBox.Show("Successfully");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            machinesTableAdapter.DeleteQuery(
+                int.Parse(machine_idTextBox.Text)
+                );
+            MessageBox.Show("Deleted");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            machinesTableAdapter.UpdateQuery(
+               int.Parse(machine_idTextBox.Text),
+               int.Parse(category_idTextBox.Text),
+               int.Parse(''),
+               int.Parse(location_idTextBox.Text),
+               int.Parse(yearsTextBox.Text),
+               double.Parse(priceTextBox.Text),
+               paymentTextBox.Text,
+               titleTextBox.Text,
+               conditionTextBox.Text
+                );
         }
     }
 }

@@ -29,32 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label machine_idLabel;
-            System.Windows.Forms.Label category_idLabel;
-            System.Windows.Forms.Label location_idLabel;
-            System.Windows.Forms.Label yearsLabel;
-            System.Windows.Forms.Label priceLabel;
-            System.Windows.Forms.Label paymentLabel;
-            System.Windows.Forms.Label titleLabel;
             System.Windows.Forms.Label conditionLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Machine_User));
+            System.Windows.Forms.Label titleLabel;
+            System.Windows.Forms.Label paymentLabel;
+            System.Windows.Forms.Label priceLabel;
+            System.Windows.Forms.Label yearsLabel;
+            System.Windows.Forms.Label location_idLabel;
+            System.Windows.Forms.Label category_idLabel;
+            System.Windows.Forms.Label machine_idLabel;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.machinesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.machinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.longMeter_DataDataSet = new Two_tier_Application.LongMeter_DataDataSet();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.machinesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.machinesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,14 +62,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.machine_idTextBox = new System.Windows.Forms.TextBox();
-            this.category_idTextBox = new System.Windows.Forms.TextBox();
-            this.location_idTextBox = new System.Windows.Forms.TextBox();
-            this.yearsTextBox = new System.Windows.Forms.TextBox();
-            this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.paymentTextBox = new System.Windows.Forms.TextBox();
-            this.titleTextBox = new System.Windows.Forms.TextBox();
-            this.conditionTextBox = new System.Windows.Forms.TextBox();
             this.machinesDataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -98,18 +76,26 @@
             this.tableAdapterManager1 = new Two_tier_Application.LongMeter_MachineTableAdapters.TableAdapterManager();
             this.machinesTableAdapter = new Two_tier_Application.LongMeter_DataDataSetTableAdapters.MachinesTableAdapter();
             this.tableAdapterManager = new Two_tier_Application.LongMeter_DataDataSetTableAdapters.TableAdapterManager();
-            machine_idLabel = new System.Windows.Forms.Label();
-            category_idLabel = new System.Windows.Forms.Label();
-            location_idLabel = new System.Windows.Forms.Label();
-            yearsLabel = new System.Windows.Forms.Label();
-            priceLabel = new System.Windows.Forms.Label();
-            paymentLabel = new System.Windows.Forms.Label();
-            titleLabel = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.conditionTextBox = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.paymentTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.yearsTextBox = new System.Windows.Forms.TextBox();
+            this.location_idTextBox = new System.Windows.Forms.TextBox();
+            this.category_idTextBox = new System.Windows.Forms.TextBox();
+            this.machine_idTextBox = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             conditionLabel = new System.Windows.Forms.Label();
+            titleLabel = new System.Windows.Forms.Label();
+            paymentLabel = new System.Windows.Forms.Label();
+            priceLabel = new System.Windows.Forms.Label();
+            yearsLabel = new System.Windows.Forms.Label();
+            location_idLabel = new System.Windows.Forms.Label();
+            category_idLabel = new System.Windows.Forms.Label();
+            machine_idLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingNavigator)).BeginInit();
-            this.machinesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.longMeter_DataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).BeginInit();
@@ -119,78 +105,6 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // machine_idLabel
-            // 
-            machine_idLabel.AutoSize = true;
-            machine_idLabel.Location = new System.Drawing.Point(24, 110);
-            machine_idLabel.Name = "machine_idLabel";
-            machine_idLabel.Size = new System.Drawing.Size(75, 15);
-            machine_idLabel.TabIndex = 19;
-            machine_idLabel.Text = "Machine id:";
-            // 
-            // category_idLabel
-            // 
-            category_idLabel.AutoSize = true;
-            category_idLabel.Location = new System.Drawing.Point(24, 141);
-            category_idLabel.Name = "category_idLabel";
-            category_idLabel.Size = new System.Drawing.Size(74, 15);
-            category_idLabel.TabIndex = 21;
-            category_idLabel.Text = "category id:";
-            // 
-            // location_idLabel
-            // 
-            location_idLabel.AutoSize = true;
-            location_idLabel.Location = new System.Drawing.Point(24, 178);
-            location_idLabel.Name = "location_idLabel";
-            location_idLabel.Size = new System.Drawing.Size(71, 15);
-            location_idLabel.TabIndex = 25;
-            location_idLabel.Text = "location id:";
-            // 
-            // yearsLabel
-            // 
-            yearsLabel.AutoSize = true;
-            yearsLabel.Location = new System.Drawing.Point(24, 209);
-            yearsLabel.Name = "yearsLabel";
-            yearsLabel.Size = new System.Drawing.Size(40, 15);
-            yearsLabel.TabIndex = 27;
-            yearsLabel.Text = "years:";
-            // 
-            // priceLabel
-            // 
-            priceLabel.AutoSize = true;
-            priceLabel.Location = new System.Drawing.Point(24, 240);
-            priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(39, 15);
-            priceLabel.TabIndex = 29;
-            priceLabel.Text = "price:";
-            // 
-            // paymentLabel
-            // 
-            paymentLabel.AutoSize = true;
-            paymentLabel.Location = new System.Drawing.Point(24, 271);
-            paymentLabel.Name = "paymentLabel";
-            paymentLabel.Size = new System.Drawing.Size(59, 15);
-            paymentLabel.TabIndex = 31;
-            paymentLabel.Text = "payment:";
-            // 
-            // titleLabel
-            // 
-            titleLabel.AutoSize = true;
-            titleLabel.Location = new System.Drawing.Point(24, 302);
-            titleLabel.Name = "titleLabel";
-            titleLabel.Size = new System.Drawing.Size(33, 15);
-            titleLabel.TabIndex = 33;
-            titleLabel.Text = "title:";
-            // 
-            // conditionLabel
-            // 
-            conditionLabel.AutoSize = true;
-            conditionLabel.Location = new System.Drawing.Point(24, 333);
-            conditionLabel.Name = "conditionLabel";
-            conditionLabel.Size = new System.Drawing.Size(64, 15);
-            conditionLabel.TabIndex = 35;
-            conditionLabel.Text = "condition:";
             // 
             // tabControl1
             // 
@@ -207,7 +121,6 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
-            this.tabPage1.Controls.Add(this.machinesBindingNavigator);
             this.tabPage1.Controls.Add(this.machinesDataGridView);
             this.tabPage1.Controls.Add(this.machine_id_SearchToolStrip);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -218,48 +131,6 @@
             this.tabPage1.Text = "Machine";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // machinesBindingNavigator
-            // 
-            this.machinesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.machinesBindingNavigator.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.machinesBindingNavigator.BindingSource = this.machinesBindingSource;
-            this.machinesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.machinesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.machinesBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
-            this.machinesBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.machinesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.machinesBindingNavigatorSaveItem});
-            this.machinesBindingNavigator.Location = new System.Drawing.Point(466, 3);
-            this.machinesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.machinesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.machinesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.machinesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.machinesBindingNavigator.Name = "machinesBindingNavigator";
-            this.machinesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.machinesBindingNavigator.Size = new System.Drawing.Size(320, 27);
-            this.machinesBindingNavigator.TabIndex = 1;
-            this.machinesBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "加入新的";
-            // 
             // machinesBindingSource
             // 
             this.machinesBindingSource.DataMember = "Machines";
@@ -269,92 +140,6 @@
             // 
             this.longMeter_DataDataSet.DataSetName = "LongMeter_DataDataSet";
             this.longMeter_DataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(34, 24);
-            this.bindingNavigatorCountItem.Text = "/{0}";
-            this.bindingNavigatorCountItem.ToolTipText = "項目總數";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "刪除";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "移到最前面";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "移到上一個";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "位置";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "目前的位置";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "移到下一個";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "移到最後面";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // machinesBindingNavigatorSaveItem
-            // 
-            this.machinesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.machinesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("machinesBindingNavigatorSaveItem.Image")));
-            this.machinesBindingNavigatorSaveItem.Name = "machinesBindingNavigatorSaveItem";
-            this.machinesBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.machinesBindingNavigatorSaveItem.Text = "儲存資料";
-            this.machinesBindingNavigatorSaveItem.Click += new System.EventHandler(this.machinesBindingNavigatorSaveItem_Click);
             // 
             // machinesDataGridView
             // 
@@ -529,6 +314,8 @@
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(machine_idLabel);
             this.tabPage3.Controls.Add(this.machine_idTextBox);
@@ -552,82 +339,18 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1189, 674);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Add_M";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(185, 433);
+            this.button1.Location = new System.Drawing.Point(105, 428);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 37;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // machine_idTextBox
-            // 
-            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "Machine_id", true));
-            this.machine_idTextBox.Location = new System.Drawing.Point(105, 107);
-            this.machine_idTextBox.Name = "machine_idTextBox";
-            this.machine_idTextBox.Size = new System.Drawing.Size(301, 25);
-            this.machine_idTextBox.TabIndex = 20;
-            // 
-            // category_idTextBox
-            // 
-            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "category_id", true));
-            this.category_idTextBox.Location = new System.Drawing.Point(105, 138);
-            this.category_idTextBox.Name = "category_idTextBox";
-            this.category_idTextBox.Size = new System.Drawing.Size(301, 25);
-            this.category_idTextBox.TabIndex = 22;
-            // 
-            // location_idTextBox
-            // 
-            this.location_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "location_id", true));
-            this.location_idTextBox.Location = new System.Drawing.Point(105, 175);
-            this.location_idTextBox.Name = "location_idTextBox";
-            this.location_idTextBox.Size = new System.Drawing.Size(301, 25);
-            this.location_idTextBox.TabIndex = 26;
-            // 
-            // yearsTextBox
-            // 
-            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "years", true));
-            this.yearsTextBox.Location = new System.Drawing.Point(105, 206);
-            this.yearsTextBox.Name = "yearsTextBox";
-            this.yearsTextBox.Size = new System.Drawing.Size(301, 25);
-            this.yearsTextBox.TabIndex = 28;
-            // 
-            // priceTextBox
-            // 
-            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(105, 237);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(301, 25);
-            this.priceTextBox.TabIndex = 30;
-            // 
-            // paymentTextBox
-            // 
-            this.paymentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "payment", true));
-            this.paymentTextBox.Location = new System.Drawing.Point(105, 268);
-            this.paymentTextBox.Name = "paymentTextBox";
-            this.paymentTextBox.Size = new System.Drawing.Size(301, 25);
-            this.paymentTextBox.TabIndex = 32;
-            // 
-            // titleTextBox
-            // 
-            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "title", true));
-            this.titleTextBox.Location = new System.Drawing.Point(105, 299);
-            this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(301, 25);
-            this.titleTextBox.TabIndex = 34;
-            // 
-            // conditionTextBox
-            // 
-            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "condition", true));
-            this.conditionTextBox.Location = new System.Drawing.Point(105, 330);
-            this.conditionTextBox.Name = "conditionTextBox";
-            this.conditionTextBox.Size = new System.Drawing.Size(301, 25);
-            this.conditionTextBox.TabIndex = 36;
             // 
             // machinesDataGridView1
             // 
@@ -753,6 +476,162 @@
             this.tableAdapterManager.StaffTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Two_tier_Application.LongMeter_DataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(210, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // conditionTextBox
+            // 
+            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "condition", true));
+            this.conditionTextBox.Location = new System.Drawing.Point(105, 330);
+            this.conditionTextBox.Name = "conditionTextBox";
+            this.conditionTextBox.Size = new System.Drawing.Size(301, 25);
+            this.conditionTextBox.TabIndex = 36;
+            // 
+            // conditionLabel
+            // 
+            conditionLabel.AutoSize = true;
+            conditionLabel.Location = new System.Drawing.Point(24, 333);
+            conditionLabel.Name = "conditionLabel";
+            conditionLabel.Size = new System.Drawing.Size(64, 15);
+            conditionLabel.TabIndex = 35;
+            conditionLabel.Text = "condition:";
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "title", true));
+            this.titleTextBox.Location = new System.Drawing.Point(105, 299);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(301, 25);
+            this.titleTextBox.TabIndex = 34;
+            // 
+            // titleLabel
+            // 
+            titleLabel.AutoSize = true;
+            titleLabel.Location = new System.Drawing.Point(24, 302);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new System.Drawing.Size(33, 15);
+            titleLabel.TabIndex = 33;
+            titleLabel.Text = "title:";
+            // 
+            // paymentTextBox
+            // 
+            this.paymentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "payment", true));
+            this.paymentTextBox.Location = new System.Drawing.Point(105, 268);
+            this.paymentTextBox.Name = "paymentTextBox";
+            this.paymentTextBox.Size = new System.Drawing.Size(301, 25);
+            this.paymentTextBox.TabIndex = 32;
+            // 
+            // paymentLabel
+            // 
+            paymentLabel.AutoSize = true;
+            paymentLabel.Location = new System.Drawing.Point(24, 271);
+            paymentLabel.Name = "paymentLabel";
+            paymentLabel.Size = new System.Drawing.Size(59, 15);
+            paymentLabel.TabIndex = 31;
+            paymentLabel.Text = "payment:";
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "price", true));
+            this.priceTextBox.Location = new System.Drawing.Point(105, 237);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(301, 25);
+            this.priceTextBox.TabIndex = 30;
+            // 
+            // priceLabel
+            // 
+            priceLabel.AutoSize = true;
+            priceLabel.Location = new System.Drawing.Point(24, 240);
+            priceLabel.Name = "priceLabel";
+            priceLabel.Size = new System.Drawing.Size(39, 15);
+            priceLabel.TabIndex = 29;
+            priceLabel.Text = "price:";
+            // 
+            // yearsTextBox
+            // 
+            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "years", true));
+            this.yearsTextBox.Location = new System.Drawing.Point(105, 206);
+            this.yearsTextBox.Name = "yearsTextBox";
+            this.yearsTextBox.Size = new System.Drawing.Size(301, 25);
+            this.yearsTextBox.TabIndex = 28;
+            // 
+            // yearsLabel
+            // 
+            yearsLabel.AutoSize = true;
+            yearsLabel.Location = new System.Drawing.Point(24, 209);
+            yearsLabel.Name = "yearsLabel";
+            yearsLabel.Size = new System.Drawing.Size(40, 15);
+            yearsLabel.TabIndex = 27;
+            yearsLabel.Text = "years:";
+            // 
+            // location_idTextBox
+            // 
+            this.location_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "location_id", true));
+            this.location_idTextBox.Location = new System.Drawing.Point(105, 175);
+            this.location_idTextBox.Name = "location_idTextBox";
+            this.location_idTextBox.Size = new System.Drawing.Size(301, 25);
+            this.location_idTextBox.TabIndex = 26;
+            // 
+            // location_idLabel
+            // 
+            location_idLabel.AutoSize = true;
+            location_idLabel.Location = new System.Drawing.Point(24, 178);
+            location_idLabel.Name = "location_idLabel";
+            location_idLabel.Size = new System.Drawing.Size(71, 15);
+            location_idLabel.TabIndex = 25;
+            location_idLabel.Text = "location id:";
+            // 
+            // category_idTextBox
+            // 
+            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "category_id", true));
+            this.category_idTextBox.Location = new System.Drawing.Point(105, 138);
+            this.category_idTextBox.Name = "category_idTextBox";
+            this.category_idTextBox.Size = new System.Drawing.Size(301, 25);
+            this.category_idTextBox.TabIndex = 22;
+            // 
+            // category_idLabel
+            // 
+            category_idLabel.AutoSize = true;
+            category_idLabel.Location = new System.Drawing.Point(24, 141);
+            category_idLabel.Name = "category_idLabel";
+            category_idLabel.Size = new System.Drawing.Size(74, 15);
+            category_idLabel.TabIndex = 21;
+            category_idLabel.Text = "category id:";
+            // 
+            // machine_idTextBox
+            // 
+            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "Machine_id", true));
+            this.machine_idTextBox.Location = new System.Drawing.Point(105, 107);
+            this.machine_idTextBox.Name = "machine_idTextBox";
+            this.machine_idTextBox.Size = new System.Drawing.Size(301, 25);
+            this.machine_idTextBox.TabIndex = 20;
+            // 
+            // machine_idLabel
+            // 
+            machine_idLabel.AutoSize = true;
+            machine_idLabel.Location = new System.Drawing.Point(24, 110);
+            machine_idLabel.Name = "machine_idLabel";
+            machine_idLabel.Size = new System.Drawing.Size(75, 15);
+            machine_idLabel.TabIndex = 19;
+            machine_idLabel.Text = "Machine id:";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(318, 428);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Update";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Machine_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -766,9 +645,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingNavigator)).EndInit();
-            this.machinesBindingNavigator.ResumeLayout(false);
-            this.machinesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.longMeter_DataDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).EndInit();
@@ -792,19 +668,6 @@
         private System.Windows.Forms.BindingSource machinesBindingSource;
         private LongMeter_DataDataSetTableAdapters.MachinesTableAdapter machinesTableAdapter;
         private LongMeter_DataDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator machinesBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton machinesBindingNavigatorSaveItem;
         private System.Windows.Forms.TabPage tabPage3;
         private LongMeter_Machine longMeter_Machine;
         private System.Windows.Forms.BindingSource machinesBindingSource1;
@@ -826,14 +689,6 @@
         private System.Windows.Forms.ToolStripButton machine_id_SearchToolStripButton;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox;
-        private System.Windows.Forms.TextBox machine_idTextBox;
-        private System.Windows.Forms.TextBox category_idTextBox;
-        private System.Windows.Forms.TextBox location_idTextBox;
-        private System.Windows.Forms.TextBox yearsTextBox;
-        private System.Windows.Forms.TextBox priceTextBox;
-        private System.Windows.Forms.TextBox paymentTextBox;
-        private System.Windows.Forms.TextBox titleTextBox;
-        private System.Windows.Forms.TextBox conditionTextBox;
         private System.Windows.Forms.DataGridView machinesDataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
@@ -845,6 +700,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox machine_idTextBox;
+        private System.Windows.Forms.TextBox category_idTextBox;
+        private System.Windows.Forms.TextBox location_idTextBox;
+        private System.Windows.Forms.TextBox yearsTextBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.TextBox paymentTextBox;
+        private System.Windows.Forms.TextBox titleTextBox;
+        private System.Windows.Forms.TextBox conditionTextBox;
+        private System.Windows.Forms.Button button3;
     }
 }
 
