@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Two_tier_Application
 {
-    public partial class Form1 : Form
+    public partial class Machine_User : Form
     {
-        public Form1()
+        public Machine_User()
         {
             InitializeComponent();
         }
@@ -81,10 +81,19 @@ namespace Two_tier_Application
                 }
             }
         }
-
-        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            machinesTableAdapter.InsertQuery_addM(
+               int.Parse(machine_idTextBox.Text),
+               int.Parse(category_idTextBox.Text),
+               //int.Parse(driver_idTextBox.Text),
+               int.Parse(location_idTextBox.Text),
+               int.Parse(yearsTextBox.Text),
+               double.Parse(priceTextBox.Text),
+               paymentTextBox.Text,
+               titleTextBox.Text,
+               conditionTextBox.Text
+               );
         }
     }
 }
