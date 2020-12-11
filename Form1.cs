@@ -50,5 +50,15 @@ namespace Two_tier_Application
             }
 
         }
+
+        private void keywordToolStripTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fillByToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

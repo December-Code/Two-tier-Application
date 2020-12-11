@@ -66,14 +66,6 @@ namespace Two_tier_Application
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.machinesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.business_dataDataSet1 = new Two_tier_Application.Business_dataDataSet1();
-            this.categoriesTableAdapter1 = new Two_tier_Application.Business_dataDataSetTableAdapters.CategoriesTableAdapter();
-            this.machinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.machinesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fKOrdersMachine589C25F3BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter = new Two_tier_Application.Business_dataDataSetTableAdapters.OrdersTableAdapter();
-            this.fKOrdersMachine589C25F3BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.machinesTableAdapter1 = new Two_tier_Application.Business_dataDataSet1TableAdapters.MachinesTableAdapter();
-            this.tableAdapterManager1 = new Two_tier_Application.Business_dataDataSet1TableAdapters.TableAdapterManager();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.ordersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,6 +76,14 @@ namespace Two_tier_Application
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKOrdersMachine589C25F3BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.machinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesTableAdapter1 = new Two_tier_Application.Business_dataDataSetTableAdapters.CategoriesTableAdapter();
+            this.machinesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTableAdapter = new Two_tier_Application.Business_dataDataSetTableAdapters.OrdersTableAdapter();
+            this.fKOrdersMachine589C25F3BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.machinesTableAdapter1 = new Two_tier_Application.Business_dataDataSet1TableAdapters.MachinesTableAdapter();
+            this.tableAdapterManager1 = new Two_tier_Application.Business_dataDataSet1TableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.business_dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKMachinescatego3EDC53F0BindingSource)).BeginInit();
@@ -98,12 +98,12 @@ namespace Two_tier_Application
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.business_dataDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource1)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // business_dataDataSet
@@ -325,9 +325,10 @@ namespace Two_tier_Application
             this.fillByToolStripButton});
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 4);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(280, 27);
+            this.fillByToolStrip.Size = new System.Drawing.Size(319, 27);
             this.fillByToolStrip.TabIndex = 1;
             this.fillByToolStrip.Text = "fillByToolStrip";
+            this.fillByToolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.fillByToolStrip_ItemClicked);
             // 
             // keywordToolStripLabel
             // 
@@ -340,6 +341,7 @@ namespace Two_tier_Application
             this.keywordToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
             this.keywordToolStripTextBox.Size = new System.Drawing.Size(132, 27);
+            this.keywordToolStripTextBox.Click += new System.EventHandler(this.keywordToolStripTextBox_Click);
             // 
             // fillByToolStripButton
             // 
@@ -445,44 +447,6 @@ namespace Two_tier_Application
             this.business_dataDataSet1.DataSetName = "Business_dataDataSet1";
             this.business_dataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // categoriesTableAdapter1
-            // 
-            this.categoriesTableAdapter1.ClearBeforeFill = true;
-            // 
-            // machinesBindingSource
-            // 
-            this.machinesBindingSource.DataMember = "Machines";
-            this.machinesBindingSource.DataSource = this.business_dataDataSet;
-            // 
-            // machinesBindingSource1
-            // 
-            this.machinesBindingSource1.DataMember = "Machines";
-            this.machinesBindingSource1.DataSource = this.business_dataDataSet;
-            // 
-            // fKOrdersMachine589C25F3BindingSource
-            // 
-            this.fKOrdersMachine589C25F3BindingSource.DataMember = "FK__Orders__Machine___589C25F3";
-            this.fKOrdersMachine589C25F3BindingSource.DataSource = this.machinesBindingSource;
-            // 
-            // ordersTableAdapter
-            // 
-            this.ordersTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKOrdersMachine589C25F3BindingSource1
-            // 
-            this.fKOrdersMachine589C25F3BindingSource1.DataMember = "FK__Orders__Machine___589C25F3";
-            this.fKOrdersMachine589C25F3BindingSource1.DataSource = this.machinesBindingSource;
-            // 
-            // machinesTableAdapter1
-            // 
-            this.machinesTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager1
-            // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.MachinesTableAdapter = this.machinesTableAdapter1;
-            this.tableAdapterManager1.UpdateOrder = Two_tier_Application.Business_dataDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.ordersDataGridView);
@@ -579,6 +543,44 @@ namespace Two_tier_Application
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.Width = 125;
             // 
+            // fKOrdersMachine589C25F3BindingSource
+            // 
+            this.fKOrdersMachine589C25F3BindingSource.DataMember = "FK__Orders__Machine___589C25F3";
+            this.fKOrdersMachine589C25F3BindingSource.DataSource = this.machinesBindingSource;
+            // 
+            // machinesBindingSource
+            // 
+            this.machinesBindingSource.DataMember = "Machines";
+            this.machinesBindingSource.DataSource = this.business_dataDataSet;
+            // 
+            // categoriesTableAdapter1
+            // 
+            this.categoriesTableAdapter1.ClearBeforeFill = true;
+            // 
+            // machinesBindingSource1
+            // 
+            this.machinesBindingSource1.DataMember = "Machines";
+            this.machinesBindingSource1.DataSource = this.business_dataDataSet;
+            // 
+            // ordersTableAdapter
+            // 
+            this.ordersTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKOrdersMachine589C25F3BindingSource1
+            // 
+            this.fKOrdersMachine589C25F3BindingSource1.DataMember = "FK__Orders__Machine___589C25F3";
+            this.fKOrdersMachine589C25F3BindingSource1.DataSource = this.machinesBindingSource;
+            // 
+            // machinesTableAdapter1
+            // 
+            this.machinesTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.MachinesTableAdapter = this.machinesTableAdapter1;
+            this.tableAdapterManager1.UpdateOrder = Two_tier_Application.Business_dataDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -605,12 +607,12 @@ namespace Two_tier_Application
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.business_dataDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKOrdersMachine589C25F3BindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
