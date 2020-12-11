@@ -89,10 +89,10 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
               <Mapping SourceColumn="condition" DataSetColumn="condition" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="category_id_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="category_id_Search_G" GeneratorSourceName="category_id_Search" GetMethodModifier="Public" GetMethodName="category_id_Search_G" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="category_id_Search_G" UserSourceName="category_id_Search">
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Category_id_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="Category_id_Search_G" GeneratorSourceName="Category_id_Search" GetMethodModifier="Public" GetMethodName="Category_id_Search_G" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="Category_id_Search_G" UserSourceName="Category_id_Search">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition
+                    <CommandText>SELECT  Machine_id, category_id, location_id, price, payment, title, condition, Driver_id, years
 FROM      Machines
 WHERE   (category_id LIKE @keyword)</CommandText>
                     <Parameters>
@@ -104,7 +104,7 @@ WHERE   (category_id LIKE @keyword)</CommandText>
               <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Machine_id_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="Machine_id_Search_G" GeneratorSourceName="Machine_id_Search" GetMethodModifier="Public" GetMethodName="Machine_id_Search_G" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="Machine_id_Search_G" UserSourceName="Machine_id_Search">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition
+                    <CommandText>SELECT  Machine_id, category_id, location_id, price, payment, title, condition, Driver_id, years
 FROM      Machines
 WHERE   (Machine_id LIKE @keyword)</CommandText>
                     <Parameters>
@@ -113,10 +113,10 @@ WHERE   (Machine_id LIKE @keyword)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="price_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="price_G_Search" GeneratorSourceName="price_Search" GetMethodModifier="Public" GetMethodName="price_G_Search" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="price_G_Search" UserSourceName="price_Search">
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Price_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="Price_G_Search" GeneratorSourceName="Price_Search" GetMethodModifier="Public" GetMethodName="Price_G_Search" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="Price_G_Search" UserSourceName="Price_Search">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition
+                    <CommandText>SELECT  Machine_id, category_id, location_id, price, payment, title, condition, Driver_id, years
 FROM      Machines
 WHERE   (price LIKE @keyword)</CommandText>
                     <Parameters>
@@ -125,10 +125,10 @@ WHERE   (price LIKE @keyword)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="title_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="title_Search_G" GeneratorSourceName="title_Search" GetMethodModifier="Public" GetMethodName="title_Search_G" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="title_Search_G" UserSourceName="title_Search">
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Title_Search" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="Title_Search_G" GeneratorSourceName="Title_Search" GetMethodModifier="Public" GetMethodName="Title_Search_G" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="Title_Search_G" UserSourceName="Title_Search">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT  Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition
+                    <CommandText>SELECT  Machine_id, category_id, location_id, price, payment, title, condition, Driver_id, years
 FROM      Machines
 WHERE   (title LIKE @keyword)</CommandText>
                     <Parameters>
@@ -147,7 +147,7 @@ WHERE   (title LIKE @keyword)</CommandText>
   <xs:element name="LongMeter_Machine" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LongMeter_Machine" msprop:Generator_UserDSName="LongMeter_Machine">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Machines" msprop:Generator_TableClassName="MachinesDataTable" msprop:Generator_TableVarName="tableMachines" msprop:Generator_RowChangedName="MachinesRowChanged" msprop:Generator_TablePropName="Machines" msprop:Generator_RowDeletingName="MachinesRowDeleting" msprop:Generator_RowChangingName="MachinesRowChanging" msprop:Generator_RowEvHandlerName="MachinesRowChangeEventHandler" msprop:Generator_RowDeletedName="MachinesRowDeleted" msprop:Generator_RowClassName="MachinesRow" msprop:Generator_UserTableName="Machines" msprop:Generator_RowEvArgName="MachinesRowChangeEvent">
+        <xs:element name="Machines" msprop:Generator_TableClassName="MachinesDataTable" msprop:Generator_TableVarName="tableMachines" msprop:Generator_TablePropName="Machines" msprop:Generator_RowDeletingName="MachinesRowDeleting" msprop:Generator_RowChangingName="MachinesRowChanging" msprop:Generator_RowEvHandlerName="MachinesRowChangeEventHandler" msprop:Generator_RowDeletedName="MachinesRowDeleted" msprop:Generator_UserTableName="Machines" msprop:Generator_RowChangedName="MachinesRowChanged" msprop:Generator_RowEvArgName="MachinesRowChangeEvent" msprop:Generator_RowClassName="MachinesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Machine_id" msprop:Generator_ColumnVarNameInTable="columnMachine_id" msprop:Generator_ColumnPropNameInRow="Machine_id" msprop:Generator_ColumnPropNameInTable="Machine_idColumn" msprop:Generator_UserColumnName="Machine_id" type="xs:int" />
