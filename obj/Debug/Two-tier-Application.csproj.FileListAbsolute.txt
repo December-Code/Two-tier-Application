@@ -1,0 +1,10 @@
+S:\研究所\軟工\HW5\Two-tier-Application\bin\Debug\Two-tier-Application.exe.config
+S:\研究所\軟工\HW5\Two-tier-Application\bin\Debug\Two-tier-Application.exe
+S:\研究所\軟工\HW5\Two-tier-Application\bin\Debug\Two-tier-Application.pdb
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csprojAssemblyReference.cache
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two_tier_Application.Form1.resources
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two_tier_Application.Properties.Resources.resources
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csproj.GenerateResource.cache
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.csproj.CoreCompileInputs.cache
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.exe
+S:\研究所\軟工\HW5\Two-tier-Application\obj\Debug\Two-tier-Application.pdb
