@@ -132,6 +132,20 @@ namespace Two_tier_Application
                 );
             MessageBox.Show("Delete");
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            main_page main = new main_page();
+            main.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            main_page main = new main_page();
+            main.Show();
+        }
     }
 }
 

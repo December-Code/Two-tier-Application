@@ -115,6 +115,8 @@
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.membershipTableAdapter = new Two_tier_Application.LongMeter_MembersTableAdapters.MembershipTableAdapter();
             this.tableAdapterManager2 = new Two_tier_Application.LongMeter_MembersTableAdapters.TableAdapterManager();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             conditionLabel = new System.Windows.Forms.Label();
             titleLabel = new System.Windows.Forms.Label();
             paymentLabel = new System.Windows.Forms.Label();
@@ -233,6 +235,7 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.machinesDataGridView);
             this.tabPage1.Controls.Add(this.machine_id_SearchToolStrip);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -359,7 +362,7 @@
             this.keywordToolStripLabel,
             this.keywordToolStripTextBox,
             this.machine_id_SearchToolStripButton});
-            this.machine_id_SearchToolStrip.Location = new System.Drawing.Point(0, 3);
+            this.machine_id_SearchToolStrip.Location = new System.Drawing.Point(5, 3);
             this.machine_id_SearchToolStrip.Name = "machine_id_SearchToolStrip";
             this.machine_id_SearchToolStrip.Size = new System.Drawing.Size(466, 27);
             this.machine_id_SearchToolStrip.TabIndex = 2;
@@ -405,6 +408,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Controls.Add(this.button4);
@@ -935,6 +939,26 @@
             this.tableAdapterManager2.MembershipTableAdapter = this.membershipTableAdapter;
             this.tableAdapterManager2.UpdateOrder = Two_tier_Application.LongMeter_MembersTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(74, 36);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(145, 23);
+            this.button7.TabIndex = 18;
+            this.button7.Text = "Order_Page";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(786, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(95, 23);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Order_page";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Machine_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1040,6 +1064,8 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 

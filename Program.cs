@@ -16,7 +16,7 @@ namespace Two_tier_Application
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Machine_User());
+            Application.Run(new main_page());
         }
     }
 }

@@ -32,7 +32,9 @@ namespace Two_tier_Application
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Machine_User Machine_User = new Machine_User();
+            Machine_User.Show();
         }
     }
 }
