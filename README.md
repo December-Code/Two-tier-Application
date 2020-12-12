@@ -1,2 +1,0 @@
-# Two-tier-Application
-SoftEnginering
