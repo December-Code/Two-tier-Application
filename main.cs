@@ -36,5 +36,12 @@ namespace Two_tier_Application
             Machine_User Machine_User = new Machine_User();
             Machine_User.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Machine_Order Machine_Order = new Machine_Order();
+            Machine_Order.Show();
+        }
     }
 }

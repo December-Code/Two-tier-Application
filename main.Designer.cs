@@ -112,6 +112,7 @@
             this.button3.Text = "Orders";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // main_page
             // 
