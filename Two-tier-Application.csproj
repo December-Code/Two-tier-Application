@@ -115,11 +115,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LongMeter_Account.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LongMeter_Account.xsd</DependentUpon>
-    </Compile>
     <Compile Include="LongMeter_Advertisement.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -211,17 +206,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="LongMeter_Account.xsc">
-      <DependentUpon>LongMeter_Account.xsd</DependentUpon>
-    </None>
-    <None Include="LongMeter_Account.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LongMeter_Account.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LongMeter_Account.xss">
-      <DependentUpon>LongMeter_Account.xsd</DependentUpon>
-    </None>
     <None Include="LongMeter_Advertisement.xsc">
       <DependentUpon>LongMeter_Advertisement.xsd</DependentUpon>
     </None>
