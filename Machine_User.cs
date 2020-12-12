@@ -109,6 +109,14 @@ namespace Two_tier_Application
 
         private void button3_Click(object sender, EventArgs e)
         {
+            try
+            {
+                this.machinesTableAdapter1.Update(longMeter_Machine.Machines);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            };
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -136,15 +144,27 @@ namespace Two_tier_Application
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            main_page main = new main_page();
-            main.Show();
+            Machine_Order Machine_Order = new Machine_Order();
+            Machine_Order.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             this.Hide();
-            main_page main = new main_page();
-            main.Show();
+            Machine_Order Machine_Order = new Machine_Order();
+            Machine_Order.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.membershipTableAdapter.Update1(this.longMeter_Members.Membership);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            };
         }
     }
 }

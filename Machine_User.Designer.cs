@@ -44,79 +44,79 @@
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label emailLabel;
             System.Windows.Forms.Label member_idLabel;
-            this.machinesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.longMeter_Machine = new Two_tier_Application.LongMeter_Machine();
-            this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.longMeter_Members = new Two_tier_Application.LongMeter_Members();
             this.machinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.longMeter_DataDataSet = new Two_tier_Application.LongMeter_DataDataSet();
-            this.machinesTableAdapter1 = new Two_tier_Application.LongMeter_MachineTableAdapters.MachinesTableAdapter();
-            this.tableAdapterManager1 = new Two_tier_Application.LongMeter_MachineTableAdapters.TableAdapterManager();
             this.machinesTableAdapter = new Two_tier_Application.LongMeter_DataDataSetTableAdapters.MachinesTableAdapter();
             this.tableAdapterManager = new Two_tier_Application.LongMeter_DataDataSetTableAdapters.TableAdapterManager();
-            this.membershipTableAdapter = new Two_tier_Application.LongMeter_MembersTableAdapters.MembershipTableAdapter();
-            this.tableAdapterManager2 = new Two_tier_Application.LongMeter_MembersTableAdapters.TableAdapterManager();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.machinesDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.conditionTextBox = new System.Windows.Forms.TextBox();
-            this.titleTextBox = new System.Windows.Forms.TextBox();
-            this.paymentTextBox = new System.Windows.Forms.TextBox();
-            this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.yearsTextBox = new System.Windows.Forms.TextBox();
-            this.location_idTextBox = new System.Windows.Forms.TextBox();
-            this.category_idTextBox = new System.Windows.Forms.TextBox();
-            this.machine_idTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.machine_idTextBox = new System.Windows.Forms.TextBox();
+            this.category_idTextBox = new System.Windows.Forms.TextBox();
+            this.location_idTextBox = new System.Windows.Forms.TextBox();
+            this.yearsTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.paymentTextBox = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.conditionTextBox = new System.Windows.Forms.TextBox();
+            this.machinesDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.membershipDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birth_DateTextBox = new System.Windows.Forms.TextBox();
-            this.adressTextBox = new System.Windows.Forms.TextBox();
-            this.last_nameTextBox = new System.Windows.Forms.TextBox();
-            this.first_nameTextBox = new System.Windows.Forms.TextBox();
-            this.phoneTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.member_idTextBox = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.member_idTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.phoneTextBox = new System.Windows.Forms.TextBox();
+            this.first_nameTextBox = new System.Windows.Forms.TextBox();
+            this.last_nameTextBox = new System.Windows.Forms.TextBox();
+            this.adressTextBox = new System.Windows.Forms.TextBox();
+            this.birth_DateTextBox = new System.Windows.Forms.TextBox();
+            this.membershipDataGridView = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
+            this.machinesDataGridView = new System.Windows.Forms.DataGridView();
             this.machine_id_SearchToolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.keywordToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.keywordToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.machine_id_SearchToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.machinesDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button8 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.longMeter_Members = new Two_tier_Application.LongMeter_Members();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipTableAdapter = new Two_tier_Application.LongMeter_MembersTableAdapters.MembershipTableAdapter();
+            this.tableAdapterManager2 = new Two_tier_Application.LongMeter_MembersTableAdapters.TableAdapterManager();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.machinesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.longMeter_Machine = new Two_tier_Application.LongMeter_Machine();
+            this.machinesTableAdapter1 = new Two_tier_Application.LongMeter_MachineTableAdapters.MachinesTableAdapter();
+            this.tableAdapterManager1 = new Two_tier_Application.LongMeter_MachineTableAdapters.TableAdapterManager();
             conditionLabel = new System.Windows.Forms.Label();
             titleLabel = new System.Windows.Forms.Label();
             paymentLabel = new System.Windows.Forms.Label();
@@ -132,10 +132,6 @@
             phoneLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             member_idLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Machine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Members)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.longMeter_DataDataSet)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -143,30 +139,149 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membershipDataGridView)).BeginInit();
             this.tabPage1.SuspendLayout();
-            this.machine_id_SearchToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).BeginInit();
+            this.machine_id_SearchToolStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Members)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Machine)).BeginInit();
             this.SuspendLayout();
             // 
-            // machinesBindingSource1
+            // conditionLabel
             // 
-            this.machinesBindingSource1.DataMember = "Machines";
-            this.machinesBindingSource1.DataSource = this.longMeter_Machine;
+            conditionLabel.AutoSize = true;
+            conditionLabel.Location = new System.Drawing.Point(24, 333);
+            conditionLabel.Name = "conditionLabel";
+            conditionLabel.Size = new System.Drawing.Size(64, 15);
+            conditionLabel.TabIndex = 35;
+            conditionLabel.Text = "condition:";
             // 
-            // longMeter_Machine
+            // titleLabel
             // 
-            this.longMeter_Machine.DataSetName = "LongMeter_Machine";
-            this.longMeter_Machine.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            titleLabel.AutoSize = true;
+            titleLabel.Location = new System.Drawing.Point(24, 302);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new System.Drawing.Size(33, 15);
+            titleLabel.TabIndex = 33;
+            titleLabel.Text = "title:";
             // 
-            // membershipBindingSource
+            // paymentLabel
             // 
-            this.membershipBindingSource.DataMember = "Membership";
-            this.membershipBindingSource.DataSource = this.longMeter_Members;
+            paymentLabel.AutoSize = true;
+            paymentLabel.Location = new System.Drawing.Point(24, 271);
+            paymentLabel.Name = "paymentLabel";
+            paymentLabel.Size = new System.Drawing.Size(59, 15);
+            paymentLabel.TabIndex = 31;
+            paymentLabel.Text = "payment:";
             // 
-            // longMeter_Members
+            // priceLabel
             // 
-            this.longMeter_Members.DataSetName = "LongMeter_Members";
-            this.longMeter_Members.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            priceLabel.AutoSize = true;
+            priceLabel.Location = new System.Drawing.Point(24, 240);
+            priceLabel.Name = "priceLabel";
+            priceLabel.Size = new System.Drawing.Size(39, 15);
+            priceLabel.TabIndex = 29;
+            priceLabel.Text = "price:";
+            // 
+            // yearsLabel
+            // 
+            yearsLabel.AutoSize = true;
+            yearsLabel.Location = new System.Drawing.Point(24, 209);
+            yearsLabel.Name = "yearsLabel";
+            yearsLabel.Size = new System.Drawing.Size(40, 15);
+            yearsLabel.TabIndex = 27;
+            yearsLabel.Text = "years:";
+            // 
+            // location_idLabel
+            // 
+            location_idLabel.AutoSize = true;
+            location_idLabel.Location = new System.Drawing.Point(24, 178);
+            location_idLabel.Name = "location_idLabel";
+            location_idLabel.Size = new System.Drawing.Size(71, 15);
+            location_idLabel.TabIndex = 25;
+            location_idLabel.Text = "location id:";
+            // 
+            // category_idLabel
+            // 
+            category_idLabel.AutoSize = true;
+            category_idLabel.Location = new System.Drawing.Point(24, 141);
+            category_idLabel.Name = "category_idLabel";
+            category_idLabel.Size = new System.Drawing.Size(74, 15);
+            category_idLabel.TabIndex = 21;
+            category_idLabel.Text = "category id:";
+            // 
+            // machine_idLabel
+            // 
+            machine_idLabel.AutoSize = true;
+            machine_idLabel.Location = new System.Drawing.Point(24, 110);
+            machine_idLabel.Name = "machine_idLabel";
+            machine_idLabel.Size = new System.Drawing.Size(75, 15);
+            machine_idLabel.TabIndex = 19;
+            machine_idLabel.Text = "Machine id:";
+            // 
+            // birth_DateLabel
+            // 
+            birth_DateLabel.AutoSize = true;
+            birth_DateLabel.Location = new System.Drawing.Point(25, 282);
+            birth_DateLabel.Name = "birth_DateLabel";
+            birth_DateLabel.Size = new System.Drawing.Size(70, 15);
+            birth_DateLabel.TabIndex = 13;
+            birth_DateLabel.Text = "Birth Date:";
+            // 
+            // adressLabel
+            // 
+            adressLabel.AutoSize = true;
+            adressLabel.Location = new System.Drawing.Point(25, 251);
+            adressLabel.Name = "adressLabel";
+            adressLabel.Size = new System.Drawing.Size(49, 15);
+            adressLabel.TabIndex = 11;
+            adressLabel.Text = "Adress:";
+            // 
+            // last_nameLabel
+            // 
+            last_nameLabel.AutoSize = true;
+            last_nameLabel.Location = new System.Drawing.Point(25, 220);
+            last_nameLabel.Name = "last_nameLabel";
+            last_nameLabel.Size = new System.Drawing.Size(64, 15);
+            last_nameLabel.TabIndex = 9;
+            last_nameLabel.Text = "last name:";
+            // 
+            // first_nameLabel
+            // 
+            first_nameLabel.AutoSize = true;
+            first_nameLabel.Location = new System.Drawing.Point(25, 189);
+            first_nameLabel.Name = "first_nameLabel";
+            first_nameLabel.Size = new System.Drawing.Size(68, 15);
+            first_nameLabel.TabIndex = 7;
+            first_nameLabel.Text = "first name:";
+            // 
+            // phoneLabel
+            // 
+            phoneLabel.AutoSize = true;
+            phoneLabel.Location = new System.Drawing.Point(25, 158);
+            phoneLabel.Name = "phoneLabel";
+            phoneLabel.Size = new System.Drawing.Size(46, 15);
+            phoneLabel.TabIndex = 5;
+            phoneLabel.Text = "Phone:";
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(25, 127);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(42, 15);
+            emailLabel.TabIndex = 3;
+            emailLabel.Text = "email:";
+            // 
+            // member_idLabel
+            // 
+            member_idLabel.AutoSize = true;
+            member_idLabel.Location = new System.Drawing.Point(25, 96);
+            member_idLabel.Name = "member_idLabel";
+            member_idLabel.Size = new System.Drawing.Size(74, 15);
+            member_idLabel.TabIndex = 1;
+            member_idLabel.Text = "Member id:";
             // 
             // machinesBindingSource
             // 
@@ -177,16 +292,6 @@
             // 
             this.longMeter_DataDataSet.DataSetName = "LongMeter_DataDataSet";
             this.longMeter_DataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // machinesTableAdapter1
-            // 
-            this.machinesTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager1
-            // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.MachinesTableAdapter = this.machinesTableAdapter1;
-            this.tableAdapterManager1.UpdateOrder = Two_tier_Application.LongMeter_MachineTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // machinesTableAdapter
             // 
@@ -207,18 +312,6 @@
             this.tableAdapterManager.RatingsTableAdapter = null;
             this.tableAdapterManager.StaffTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Two_tier_Application.LongMeter_DataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // membershipTableAdapter
-            // 
-            this.membershipTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager2
-            // 
-            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager2.MembershipTableAdapter = this.membershipTableAdapter;
-            this.tableAdapterManager2.OrdersTableAdapter = null;
-            this.tableAdapterManager2.RatingsTableAdapter = null;
-            this.tableAdapterManager2.UpdateOrder = Two_tier_Application.LongMeter_MembersTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tabPage3
             // 
@@ -251,6 +344,100 @@
             this.tabPage3.Text = "Add_M";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(318, 428);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Update";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(210, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(105, 428);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // machine_idTextBox
+            // 
+            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "Machine_id", true));
+            this.machine_idTextBox.Location = new System.Drawing.Point(105, 107);
+            this.machine_idTextBox.Name = "machine_idTextBox";
+            this.machine_idTextBox.Size = new System.Drawing.Size(301, 25);
+            this.machine_idTextBox.TabIndex = 20;
+            // 
+            // category_idTextBox
+            // 
+            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "category_id", true));
+            this.category_idTextBox.Location = new System.Drawing.Point(105, 138);
+            this.category_idTextBox.Name = "category_idTextBox";
+            this.category_idTextBox.Size = new System.Drawing.Size(301, 25);
+            this.category_idTextBox.TabIndex = 22;
+            // 
+            // location_idTextBox
+            // 
+            this.location_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "location_id", true));
+            this.location_idTextBox.Location = new System.Drawing.Point(105, 175);
+            this.location_idTextBox.Name = "location_idTextBox";
+            this.location_idTextBox.Size = new System.Drawing.Size(301, 25);
+            this.location_idTextBox.TabIndex = 26;
+            // 
+            // yearsTextBox
+            // 
+            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "years", true));
+            this.yearsTextBox.Location = new System.Drawing.Point(105, 206);
+            this.yearsTextBox.Name = "yearsTextBox";
+            this.yearsTextBox.Size = new System.Drawing.Size(301, 25);
+            this.yearsTextBox.TabIndex = 28;
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "price", true));
+            this.priceTextBox.Location = new System.Drawing.Point(105, 237);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(301, 25);
+            this.priceTextBox.TabIndex = 30;
+            // 
+            // paymentTextBox
+            // 
+            this.paymentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "payment", true));
+            this.paymentTextBox.Location = new System.Drawing.Point(105, 268);
+            this.paymentTextBox.Name = "paymentTextBox";
+            this.paymentTextBox.Size = new System.Drawing.Size(301, 25);
+            this.paymentTextBox.TabIndex = 32;
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "title", true));
+            this.titleTextBox.Location = new System.Drawing.Point(105, 299);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(301, 25);
+            this.titleTextBox.TabIndex = 34;
+            // 
+            // conditionTextBox
+            // 
+            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "condition", true));
+            this.conditionTextBox.Location = new System.Drawing.Point(105, 330);
+            this.conditionTextBox.Name = "conditionTextBox";
+            this.conditionTextBox.Size = new System.Drawing.Size(301, 25);
+            this.conditionTextBox.TabIndex = 36;
+            // 
             // machinesDataGridView1
             // 
             this.machinesDataGridView1.AutoGenerateColumns = false;
@@ -273,61 +460,13 @@
             this.machinesDataGridView1.Size = new System.Drawing.Size(773, 496);
             this.machinesDataGridView1.TabIndex = 19;
             // 
-            // dataGridViewTextBoxColumn18
+            // dataGridViewTextBoxColumn10
             // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "condition";
-            this.dataGridViewTextBoxColumn18.HeaderText = "condition";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn17.HeaderText = "title";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "payment";
-            this.dataGridViewTextBoxColumn16.HeaderText = "payment";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "price";
-            this.dataGridViewTextBoxColumn15.HeaderText = "price";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "years";
-            this.dataGridViewTextBoxColumn14.HeaderText = "years";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "location_id";
-            this.dataGridViewTextBoxColumn13.HeaderText = "location_id";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Driver_id";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Driver_id";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 125;
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Machine_id";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Machine_id";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 125;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -337,179 +476,61 @@
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.Width = 125;
             // 
-            // dataGridViewTextBoxColumn10
+            // dataGridViewTextBoxColumn12
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Machine_id";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Machine_id";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 125;
             // 
-            // conditionTextBox
+            // dataGridViewTextBoxColumn13
             // 
-            this.conditionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "condition", true));
-            this.conditionTextBox.Location = new System.Drawing.Point(105, 330);
-            this.conditionTextBox.Name = "conditionTextBox";
-            this.conditionTextBox.Size = new System.Drawing.Size(301, 25);
-            this.conditionTextBox.TabIndex = 36;
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "location_id";
+            this.dataGridViewTextBoxColumn13.HeaderText = "location_id";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 125;
             // 
-            // conditionLabel
+            // dataGridViewTextBoxColumn14
             // 
-            conditionLabel.AutoSize = true;
-            conditionLabel.Location = new System.Drawing.Point(24, 333);
-            conditionLabel.Name = "conditionLabel";
-            conditionLabel.Size = new System.Drawing.Size(64, 15);
-            conditionLabel.TabIndex = 35;
-            conditionLabel.Text = "condition:";
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "years";
+            this.dataGridViewTextBoxColumn14.HeaderText = "years";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 125;
             // 
-            // titleTextBox
+            // dataGridViewTextBoxColumn15
             // 
-            this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "title", true));
-            this.titleTextBox.Location = new System.Drawing.Point(105, 299);
-            this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(301, 25);
-            this.titleTextBox.TabIndex = 34;
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn15.HeaderText = "price";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 125;
             // 
-            // titleLabel
+            // dataGridViewTextBoxColumn16
             // 
-            titleLabel.AutoSize = true;
-            titleLabel.Location = new System.Drawing.Point(24, 302);
-            titleLabel.Name = "titleLabel";
-            titleLabel.Size = new System.Drawing.Size(33, 15);
-            titleLabel.TabIndex = 33;
-            titleLabel.Text = "title:";
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "payment";
+            this.dataGridViewTextBoxColumn16.HeaderText = "payment";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 125;
             // 
-            // paymentTextBox
+            // dataGridViewTextBoxColumn17
             // 
-            this.paymentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "payment", true));
-            this.paymentTextBox.Location = new System.Drawing.Point(105, 268);
-            this.paymentTextBox.Name = "paymentTextBox";
-            this.paymentTextBox.Size = new System.Drawing.Size(301, 25);
-            this.paymentTextBox.TabIndex = 32;
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn17.HeaderText = "title";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 125;
             // 
-            // paymentLabel
+            // dataGridViewTextBoxColumn18
             // 
-            paymentLabel.AutoSize = true;
-            paymentLabel.Location = new System.Drawing.Point(24, 271);
-            paymentLabel.Name = "paymentLabel";
-            paymentLabel.Size = new System.Drawing.Size(59, 15);
-            paymentLabel.TabIndex = 31;
-            paymentLabel.Text = "payment:";
-            // 
-            // priceTextBox
-            // 
-            this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(105, 237);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(301, 25);
-            this.priceTextBox.TabIndex = 30;
-            // 
-            // priceLabel
-            // 
-            priceLabel.AutoSize = true;
-            priceLabel.Location = new System.Drawing.Point(24, 240);
-            priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(39, 15);
-            priceLabel.TabIndex = 29;
-            priceLabel.Text = "price:";
-            // 
-            // yearsTextBox
-            // 
-            this.yearsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "years", true));
-            this.yearsTextBox.Location = new System.Drawing.Point(105, 206);
-            this.yearsTextBox.Name = "yearsTextBox";
-            this.yearsTextBox.Size = new System.Drawing.Size(301, 25);
-            this.yearsTextBox.TabIndex = 28;
-            // 
-            // yearsLabel
-            // 
-            yearsLabel.AutoSize = true;
-            yearsLabel.Location = new System.Drawing.Point(24, 209);
-            yearsLabel.Name = "yearsLabel";
-            yearsLabel.Size = new System.Drawing.Size(40, 15);
-            yearsLabel.TabIndex = 27;
-            yearsLabel.Text = "years:";
-            // 
-            // location_idTextBox
-            // 
-            this.location_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "location_id", true));
-            this.location_idTextBox.Location = new System.Drawing.Point(105, 175);
-            this.location_idTextBox.Name = "location_idTextBox";
-            this.location_idTextBox.Size = new System.Drawing.Size(301, 25);
-            this.location_idTextBox.TabIndex = 26;
-            // 
-            // location_idLabel
-            // 
-            location_idLabel.AutoSize = true;
-            location_idLabel.Location = new System.Drawing.Point(24, 178);
-            location_idLabel.Name = "location_idLabel";
-            location_idLabel.Size = new System.Drawing.Size(71, 15);
-            location_idLabel.TabIndex = 25;
-            location_idLabel.Text = "location id:";
-            // 
-            // category_idTextBox
-            // 
-            this.category_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "category_id", true));
-            this.category_idTextBox.Location = new System.Drawing.Point(105, 138);
-            this.category_idTextBox.Name = "category_idTextBox";
-            this.category_idTextBox.Size = new System.Drawing.Size(301, 25);
-            this.category_idTextBox.TabIndex = 22;
-            // 
-            // category_idLabel
-            // 
-            category_idLabel.AutoSize = true;
-            category_idLabel.Location = new System.Drawing.Point(24, 141);
-            category_idLabel.Name = "category_idLabel";
-            category_idLabel.Size = new System.Drawing.Size(74, 15);
-            category_idLabel.TabIndex = 21;
-            category_idLabel.Text = "category id:";
-            // 
-            // machine_idTextBox
-            // 
-            this.machine_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.machinesBindingSource, "Machine_id", true));
-            this.machine_idTextBox.Location = new System.Drawing.Point(105, 107);
-            this.machine_idTextBox.Name = "machine_idTextBox";
-            this.machine_idTextBox.Size = new System.Drawing.Size(301, 25);
-            this.machine_idTextBox.TabIndex = 20;
-            // 
-            // machine_idLabel
-            // 
-            machine_idLabel.AutoSize = true;
-            machine_idLabel.Location = new System.Drawing.Point(24, 110);
-            machine_idLabel.Name = "machine_idLabel";
-            machine_idLabel.Size = new System.Drawing.Size(75, 15);
-            machine_idLabel.TabIndex = 19;
-            machine_idLabel.Text = "Machine id:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(105, 428);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(210, 428);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(318, 428);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "condition";
+            this.dataGridViewTextBoxColumn18.HeaderText = "condition";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Width = 125;
             // 
             // tabPage2
             // 
@@ -540,6 +561,102 @@
             this.tabPage2.Text = "User";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(74, 36);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(145, 23);
+            this.button7.TabIndex = 18;
+            this.button7.Text = "Order_Page";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(208, 328);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Update";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(117, 328);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Delete";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(24, 328);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Add";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // member_idTextBox
+            // 
+            this.member_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Member_id", true));
+            this.member_idTextBox.Location = new System.Drawing.Point(105, 93);
+            this.member_idTextBox.Name = "member_idTextBox";
+            this.member_idTextBox.Size = new System.Drawing.Size(178, 25);
+            this.member_idTextBox.TabIndex = 2;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "email", true));
+            this.emailTextBox.Location = new System.Drawing.Point(105, 124);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(178, 25);
+            this.emailTextBox.TabIndex = 4;
+            // 
+            // phoneTextBox
+            // 
+            this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Phone", true));
+            this.phoneTextBox.Location = new System.Drawing.Point(105, 155);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(178, 25);
+            this.phoneTextBox.TabIndex = 6;
+            // 
+            // first_nameTextBox
+            // 
+            this.first_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "first_name", true));
+            this.first_nameTextBox.Location = new System.Drawing.Point(105, 186);
+            this.first_nameTextBox.Name = "first_nameTextBox";
+            this.first_nameTextBox.Size = new System.Drawing.Size(178, 25);
+            this.first_nameTextBox.TabIndex = 8;
+            // 
+            // last_nameTextBox
+            // 
+            this.last_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "last_name", true));
+            this.last_nameTextBox.Location = new System.Drawing.Point(105, 217);
+            this.last_nameTextBox.Name = "last_nameTextBox";
+            this.last_nameTextBox.Size = new System.Drawing.Size(178, 25);
+            this.last_nameTextBox.TabIndex = 10;
+            // 
+            // adressTextBox
+            // 
+            this.adressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Adress", true));
+            this.adressTextBox.Location = new System.Drawing.Point(105, 248);
+            this.adressTextBox.Name = "adressTextBox";
+            this.adressTextBox.Size = new System.Drawing.Size(178, 25);
+            this.adressTextBox.TabIndex = 12;
+            // 
+            // birth_DateTextBox
+            // 
+            this.birth_DateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Birth_Date", true));
+            this.birth_DateTextBox.Location = new System.Drawing.Point(105, 279);
+            this.birth_DateTextBox.Name = "birth_DateTextBox";
+            this.birth_DateTextBox.Size = new System.Drawing.Size(178, 25);
+            this.birth_DateTextBox.TabIndex = 14;
+            // 
             // membershipDataGridView
             // 
             this.membershipDataGridView.AllowUserToAddRows = false;
@@ -561,220 +678,6 @@
             this.membershipDataGridView.Size = new System.Drawing.Size(848, 498);
             this.membershipDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "Birth_Date";
-            this.dataGridViewTextBoxColumn25.HeaderText = "Birth_Date";
-            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Adress";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Adress";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "last_name";
-            this.dataGridViewTextBoxColumn23.HeaderText = "last_name";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "first_name";
-            this.dataGridViewTextBoxColumn22.HeaderText = "first_name";
-            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Phone";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "email";
-            this.dataGridViewTextBoxColumn20.HeaderText = "email";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "Member_id";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Member_id";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 125;
-            // 
-            // birth_DateTextBox
-            // 
-            this.birth_DateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Birth_Date", true));
-            this.birth_DateTextBox.Location = new System.Drawing.Point(105, 279);
-            this.birth_DateTextBox.Name = "birth_DateTextBox";
-            this.birth_DateTextBox.Size = new System.Drawing.Size(178, 25);
-            this.birth_DateTextBox.TabIndex = 14;
-            // 
-            // birth_DateLabel
-            // 
-            birth_DateLabel.AutoSize = true;
-            birth_DateLabel.Location = new System.Drawing.Point(25, 282);
-            birth_DateLabel.Name = "birth_DateLabel";
-            birth_DateLabel.Size = new System.Drawing.Size(70, 15);
-            birth_DateLabel.TabIndex = 13;
-            birth_DateLabel.Text = "Birth Date:";
-            // 
-            // adressTextBox
-            // 
-            this.adressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Adress", true));
-            this.adressTextBox.Location = new System.Drawing.Point(105, 248);
-            this.adressTextBox.Name = "adressTextBox";
-            this.adressTextBox.Size = new System.Drawing.Size(178, 25);
-            this.adressTextBox.TabIndex = 12;
-            // 
-            // adressLabel
-            // 
-            adressLabel.AutoSize = true;
-            adressLabel.Location = new System.Drawing.Point(25, 251);
-            adressLabel.Name = "adressLabel";
-            adressLabel.Size = new System.Drawing.Size(49, 15);
-            adressLabel.TabIndex = 11;
-            adressLabel.Text = "Adress:";
-            // 
-            // last_nameTextBox
-            // 
-            this.last_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "last_name", true));
-            this.last_nameTextBox.Location = new System.Drawing.Point(105, 217);
-            this.last_nameTextBox.Name = "last_nameTextBox";
-            this.last_nameTextBox.Size = new System.Drawing.Size(178, 25);
-            this.last_nameTextBox.TabIndex = 10;
-            // 
-            // last_nameLabel
-            // 
-            last_nameLabel.AutoSize = true;
-            last_nameLabel.Location = new System.Drawing.Point(25, 220);
-            last_nameLabel.Name = "last_nameLabel";
-            last_nameLabel.Size = new System.Drawing.Size(64, 15);
-            last_nameLabel.TabIndex = 9;
-            last_nameLabel.Text = "last name:";
-            // 
-            // first_nameTextBox
-            // 
-            this.first_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "first_name", true));
-            this.first_nameTextBox.Location = new System.Drawing.Point(105, 186);
-            this.first_nameTextBox.Name = "first_nameTextBox";
-            this.first_nameTextBox.Size = new System.Drawing.Size(178, 25);
-            this.first_nameTextBox.TabIndex = 8;
-            // 
-            // first_nameLabel
-            // 
-            first_nameLabel.AutoSize = true;
-            first_nameLabel.Location = new System.Drawing.Point(25, 189);
-            first_nameLabel.Name = "first_nameLabel";
-            first_nameLabel.Size = new System.Drawing.Size(68, 15);
-            first_nameLabel.TabIndex = 7;
-            first_nameLabel.Text = "first name:";
-            // 
-            // phoneTextBox
-            // 
-            this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(105, 155);
-            this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(178, 25);
-            this.phoneTextBox.TabIndex = 6;
-            // 
-            // phoneLabel
-            // 
-            phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(25, 158);
-            phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(46, 15);
-            phoneLabel.TabIndex = 5;
-            phoneLabel.Text = "Phone:";
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(105, 124);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(178, 25);
-            this.emailTextBox.TabIndex = 4;
-            // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(25, 127);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(42, 15);
-            emailLabel.TabIndex = 3;
-            emailLabel.Text = "email:";
-            // 
-            // member_idTextBox
-            // 
-            this.member_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membershipBindingSource, "Member_id", true));
-            this.member_idTextBox.Location = new System.Drawing.Point(105, 93);
-            this.member_idTextBox.Name = "member_idTextBox";
-            this.member_idTextBox.Size = new System.Drawing.Size(178, 25);
-            this.member_idTextBox.TabIndex = 2;
-            // 
-            // member_idLabel
-            // 
-            member_idLabel.AutoSize = true;
-            member_idLabel.Location = new System.Drawing.Point(25, 96);
-            member_idLabel.Name = "member_idLabel";
-            member_idLabel.Size = new System.Drawing.Size(74, 15);
-            member_idLabel.TabIndex = 1;
-            member_idLabel.Text = "Member id:";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(24, 328);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Add";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(117, 328);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Delete";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(208, 328);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Update";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(74, 36);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(145, 23);
-            this.button7.TabIndex = 18;
-            this.button7.Text = "Order_Page";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
@@ -789,60 +692,15 @@
             this.tabPage1.Text = "Machine";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // machine_id_SearchToolStrip
+            // button8
             // 
-            this.machine_id_SearchToolStrip.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.machine_id_SearchToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.machine_id_SearchToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.machine_id_SearchToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripComboBox,
-            this.keywordToolStripLabel,
-            this.keywordToolStripTextBox,
-            this.machine_id_SearchToolStripButton});
-            this.machine_id_SearchToolStrip.Location = new System.Drawing.Point(5, 3);
-            this.machine_id_SearchToolStrip.Name = "machine_id_SearchToolStrip";
-            this.machine_id_SearchToolStrip.Size = new System.Drawing.Size(466, 31);
-            this.machine_id_SearchToolStrip.TabIndex = 2;
-            this.machine_id_SearchToolStrip.Text = "machine_id_SearchToolStrip";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(41, 28);
-            this.toolStripLabel1.Text = "Kind";
-            // 
-            // toolStripComboBox
-            // 
-            this.toolStripComboBox.Items.AddRange(new object[] {
-            "Machine_id",
-            "category_id",
-            "price",
-            "title"});
-            this.toolStripComboBox.Name = "toolStripComboBox";
-            this.toolStripComboBox.Size = new System.Drawing.Size(125, 31);
-            this.toolStripComboBox.Text = "Machine_id";
-            // 
-            // keywordToolStripLabel
-            // 
-            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
-            this.keywordToolStripLabel.Size = new System.Drawing.Size(73, 28);
-            this.keywordToolStripLabel.Text = "keyword:";
-            // 
-            // keywordToolStripTextBox
-            // 
-            this.keywordToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
-            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
-            this.keywordToolStripTextBox.Size = new System.Drawing.Size(150, 31);
-            // 
-            // machine_id_SearchToolStripButton
-            // 
-            this.machine_id_SearchToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.machine_id_SearchToolStripButton.Name = "machine_id_SearchToolStripButton";
-            this.machine_id_SearchToolStripButton.Size = new System.Drawing.Size(60, 28);
-            this.machine_id_SearchToolStripButton.Text = "Search";
-            this.machine_id_SearchToolStripButton.ToolTipText = "Machine_id_Search";
-            this.machine_id_SearchToolStripButton.Click += new System.EventHandler(this.machine_id_SearchToolStripButton_Click);
+            this.button8.Location = new System.Drawing.Point(786, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(95, 23);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Order_page";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // machinesDataGridView
             // 
@@ -867,87 +725,60 @@
             this.machinesDataGridView.Size = new System.Drawing.Size(1183, 638);
             this.machinesDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn9
+            // machine_id_SearchToolStrip
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "condition";
-            this.dataGridViewTextBoxColumn9.HeaderText = "condition";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 125;
+            this.machine_id_SearchToolStrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.machine_id_SearchToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.machine_id_SearchToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.machine_id_SearchToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.toolStripComboBox,
+            this.keywordToolStripLabel,
+            this.keywordToolStripTextBox,
+            this.machine_id_SearchToolStripButton});
+            this.machine_id_SearchToolStrip.Location = new System.Drawing.Point(5, 3);
+            this.machine_id_SearchToolStrip.Name = "machine_id_SearchToolStrip";
+            this.machine_id_SearchToolStrip.Size = new System.Drawing.Size(466, 27);
+            this.machine_id_SearchToolStrip.TabIndex = 2;
+            this.machine_id_SearchToolStrip.Text = "machine_id_SearchToolStrip";
             // 
-            // dataGridViewTextBoxColumn8
+            // toolStripLabel1
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn8.HeaderText = "title";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(41, 24);
+            this.toolStripLabel1.Text = "Kind";
             // 
-            // dataGridViewTextBoxColumn7
+            // toolStripComboBox
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "payment";
-            this.dataGridViewTextBoxColumn7.HeaderText = "payment";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 125;
+            this.toolStripComboBox.Items.AddRange(new object[] {
+            "Machine_id",
+            "category_id",
+            "price",
+            "title"});
+            this.toolStripComboBox.Name = "toolStripComboBox";
+            this.toolStripComboBox.Size = new System.Drawing.Size(125, 27);
+            this.toolStripComboBox.Text = "Machine_id";
             // 
-            // dataGridViewTextBoxColumn6
+            // keywordToolStripLabel
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "price";
-            this.dataGridViewTextBoxColumn6.HeaderText = "price";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.keywordToolStripLabel.Name = "keywordToolStripLabel";
+            this.keywordToolStripLabel.Size = new System.Drawing.Size(73, 24);
+            this.keywordToolStripLabel.Text = "keyword:";
             // 
-            // dataGridViewTextBoxColumn5
+            // keywordToolStripTextBox
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "years";
-            this.dataGridViewTextBoxColumn5.HeaderText = "years";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.keywordToolStripTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
+            this.keywordToolStripTextBox.Name = "keywordToolStripTextBox";
+            this.keywordToolStripTextBox.Size = new System.Drawing.Size(150, 27);
             // 
-            // dataGridViewTextBoxColumn4
+            // machine_id_SearchToolStripButton
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "location_id";
-            this.dataGridViewTextBoxColumn4.HeaderText = "location_id";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Driver_id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Driver_id";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "category_id";
-            this.dataGridViewTextBoxColumn2.HeaderText = "category_id";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Machine_id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Machine_id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(786, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(95, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Order_page";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.machine_id_SearchToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.machine_id_SearchToolStripButton.Name = "machine_id_SearchToolStripButton";
+            this.machine_id_SearchToolStripButton.Size = new System.Drawing.Size(60, 24);
+            this.machine_id_SearchToolStripButton.Text = "Search";
+            this.machine_id_SearchToolStripButton.ToolTipText = "Machine_id_Search";
+            this.machine_id_SearchToolStripButton.Click += new System.EventHandler(this.machine_id_SearchToolStripButton_Click);
             // 
             // tabControl1
             // 
@@ -961,6 +792,176 @@
             this.tabControl1.Size = new System.Drawing.Size(1197, 703);
             this.tabControl1.TabIndex = 0;
             // 
+            // membershipBindingSource
+            // 
+            this.membershipBindingSource.DataMember = "Membership";
+            this.membershipBindingSource.DataSource = this.longMeter_Members;
+            // 
+            // longMeter_Members
+            // 
+            this.longMeter_Members.DataSetName = "LongMeter_Members";
+            this.longMeter_Members.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Member_id";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Member_id";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "email";
+            this.dataGridViewTextBoxColumn20.HeaderText = "email";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Phone";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "first_name";
+            this.dataGridViewTextBoxColumn22.HeaderText = "first_name";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "last_name";
+            this.dataGridViewTextBoxColumn23.HeaderText = "last_name";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Adress";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Adress";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "Birth_Date";
+            this.dataGridViewTextBoxColumn25.HeaderText = "Birth_Date";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.Width = 125;
+            // 
+            // membershipTableAdapter
+            // 
+            this.membershipTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager2
+            // 
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.MembershipTableAdapter = this.membershipTableAdapter;
+            this.tableAdapterManager2.OrdersTableAdapter = null;
+            this.tableAdapterManager2.RatingsTableAdapter = null;
+            this.tableAdapterManager2.UpdateOrder = Two_tier_Application.LongMeter_MembersTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Machine_id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Machine_id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "category_id";
+            this.dataGridViewTextBoxColumn2.HeaderText = "category_id";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Driver_id";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Driver_id";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "location_id";
+            this.dataGridViewTextBoxColumn4.HeaderText = "location_id";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "years";
+            this.dataGridViewTextBoxColumn5.HeaderText = "years";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn6.HeaderText = "price";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "payment";
+            this.dataGridViewTextBoxColumn7.HeaderText = "payment";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn8.HeaderText = "title";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "condition";
+            this.dataGridViewTextBoxColumn9.HeaderText = "condition";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // machinesBindingSource1
+            // 
+            this.machinesBindingSource1.DataMember = "Machines";
+            this.machinesBindingSource1.DataSource = this.longMeter_Machine;
+            // 
+            // longMeter_Machine
+            // 
+            this.longMeter_Machine.DataSetName = "LongMeter_Machine";
+            this.longMeter_Machine.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // machinesTableAdapter1
+            // 
+            this.machinesTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.MachinesTableAdapter = this.machinesTableAdapter1;
+            this.tableAdapterManager1.UpdateOrder = Two_tier_Application.LongMeter_MachineTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // Machine_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -971,10 +972,6 @@
             this.Name = "Machine_User";
             this.Text = "Machine&User";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Machine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Members)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.longMeter_DataDataSet)).EndInit();
             this.tabPage3.ResumeLayout(false);
@@ -985,10 +982,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.membershipDataGridView)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).EndInit();
             this.machine_id_SearchToolStrip.ResumeLayout(false);
             this.machine_id_SearchToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machinesDataGridView)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Members)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machinesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Machine)).EndInit();
             this.ResumeLayout(false);
 
         }

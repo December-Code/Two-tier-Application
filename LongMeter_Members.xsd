@@ -71,7 +71,7 @@ SELECT Member_id, email, Phone, first_name, last_name, Adress, Birth_Date FROM M
               <Mapping SourceColumn="Birth_Date" DataSetColumn="Birth_Date" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteQuery">
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM Orders WHERE seller_id=@Member_id;
@@ -85,7 +85,7 @@ DELETE FROM Membership WHERE Member_id=@Member_id;</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertQuery">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO [dbo].[Membership] ([Member_id], [email], [Phone], [first_name], [last_name], [Adress], [Birth_Date]) VALUES (@Member_id, @email, @Phone, @first_name, @last_name, @Adress, @Birth_Date);
@@ -101,6 +101,14 @@ SELECT Member_id, email, Phone, first_name, last_name, Adress, Birth_Date FROM M
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Membership" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Update1" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="NewDate" GeneratorSourceName="Update1" GetMethodModifier="Public" GetMethodName="NewDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="NewDate" UserSourceName="Update1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *FROM dbo.Membership</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
               </DbSource>
             </Sources>
           </TableAdapter>
@@ -214,7 +222,7 @@ SELECT Order_id, seller_id, buyer_id FROM Orders WHERE (Order_id = @Order_id)</C
   <xs:element name="LongMeter_Members" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LongMeter_Members" msprop:Generator_UserDSName="LongMeter_Members">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Membership" msprop:Generator_TableClassName="MembershipDataTable" msprop:Generator_TableVarName="tableMembership" msprop:Generator_RowChangedName="MembershipRowChanged" msprop:Generator_TablePropName="Membership" msprop:Generator_RowDeletingName="MembershipRowDeleting" msprop:Generator_RowChangingName="MembershipRowChanging" msprop:Generator_RowEvHandlerName="MembershipRowChangeEventHandler" msprop:Generator_RowDeletedName="MembershipRowDeleted" msprop:Generator_RowClassName="MembershipRow" msprop:Generator_UserTableName="Membership" msprop:Generator_RowEvArgName="MembershipRowChangeEvent">
+        <xs:element name="Membership" msprop:Generator_TableClassName="MembershipDataTable" msprop:Generator_TableVarName="tableMembership" msprop:Generator_TablePropName="Membership" msprop:Generator_RowDeletingName="MembershipRowDeleting" msprop:Generator_RowChangingName="MembershipRowChanging" msprop:Generator_RowEvHandlerName="MembershipRowChangeEventHandler" msprop:Generator_RowDeletedName="MembershipRowDeleted" msprop:Generator_UserTableName="Membership" msprop:Generator_RowChangedName="MembershipRowChanged" msprop:Generator_RowEvArgName="MembershipRowChangeEvent" msprop:Generator_RowClassName="MembershipRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Member_id" msprop:Generator_ColumnVarNameInTable="columnMember_id" msprop:Generator_ColumnPropNameInRow="Member_id" msprop:Generator_ColumnPropNameInTable="Member_idColumn" msprop:Generator_UserColumnName="Member_id" type="xs:int" />
@@ -257,7 +265,7 @@ SELECT Order_id, seller_id, buyer_id FROM Orders WHERE (Order_id = @Order_id)</C
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Ratings" msprop:Generator_TableClassName="RatingsDataTable" msprop:Generator_TableVarName="tableRatings" msprop:Generator_TablePropName="Ratings" msprop:Generator_RowDeletingName="RatingsRowDeleting" msprop:Generator_RowChangingName="RatingsRowChanging" msprop:Generator_RowEvHandlerName="RatingsRowChangeEventHandler" msprop:Generator_RowDeletedName="RatingsRowDeleted" msprop:Generator_UserTableName="Ratings" msprop:Generator_RowChangedName="RatingsRowChanged" msprop:Generator_RowEvArgName="RatingsRowChangeEvent" msprop:Generator_RowClassName="RatingsRow">
+        <xs:element name="Ratings" msprop:Generator_TableClassName="RatingsDataTable" msprop:Generator_TableVarName="tableRatings" msprop:Generator_RowChangedName="RatingsRowChanged" msprop:Generator_TablePropName="Ratings" msprop:Generator_RowDeletingName="RatingsRowDeleting" msprop:Generator_RowChangingName="RatingsRowChanging" msprop:Generator_RowEvHandlerName="RatingsRowChangeEventHandler" msprop:Generator_RowDeletedName="RatingsRowDeleted" msprop:Generator_RowClassName="RatingsRow" msprop:Generator_UserTableName="Ratings" msprop:Generator_RowEvArgName="RatingsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Rating_No" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnRating_No" msprop:Generator_ColumnPropNameInRow="Rating_No" msprop:Generator_ColumnPropNameInTable="Rating_NoColumn" msprop:Generator_UserColumnName="Rating_No" type="xs:int" />
@@ -266,7 +274,7 @@ SELECT Order_id, seller_id, buyer_id FROM Orders WHERE (Order_id = @Order_id)</C
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Orders" msprop:Generator_TableClassName="OrdersDataTable" msprop:Generator_TableVarName="tableOrders" msprop:Generator_TablePropName="Orders" msprop:Generator_RowDeletingName="OrdersRowDeleting" msprop:Generator_RowChangingName="OrdersRowChanging" msprop:Generator_RowEvHandlerName="OrdersRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdersRowDeleted" msprop:Generator_UserTableName="Orders" msprop:Generator_RowChangedName="OrdersRowChanged" msprop:Generator_RowEvArgName="OrdersRowChangeEvent" msprop:Generator_RowClassName="OrdersRow">
+        <xs:element name="Orders" msprop:Generator_TableClassName="OrdersDataTable" msprop:Generator_TableVarName="tableOrders" msprop:Generator_RowChangedName="OrdersRowChanged" msprop:Generator_TablePropName="Orders" msprop:Generator_RowDeletingName="OrdersRowDeleting" msprop:Generator_RowChangingName="OrdersRowChanging" msprop:Generator_RowEvHandlerName="OrdersRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdersRowDeleted" msprop:Generator_RowClassName="OrdersRow" msprop:Generator_UserTableName="Orders" msprop:Generator_RowEvArgName="OrdersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Order_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnOrder_id" msprop:Generator_ColumnPropNameInRow="Order_id" msprop:Generator_ColumnPropNameInTable="Order_idColumn" msprop:Generator_UserColumnName="Order_id" type="xs:int" />
@@ -292,9 +300,9 @@ SELECT Order_id, seller_id, buyer_id FROM Orders WHERE (Order_id = @Order_id)</C
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__Ratings__User_id__03F0984C" msdata:parent="Membership" msdata:child="Ratings" msdata:parentkey="Member_id" msdata:childkey="User_id" msprop:Generator_UserChildTable="Ratings" msprop:Generator_ChildPropName="GetRatingsRows" msprop:Generator_UserRelationName="FK__Ratings__User_id__03F0984C" msprop:Generator_ParentPropName="MembershipRow" msprop:Generator_RelationVarName="relationFK__Ratings__User_id__03F0984C" msprop:Generator_UserParentTable="Membership" />
-      <msdata:Relationship name="FK__Orders__buyer_id__2B0A656D" msdata:parent="Membership" msdata:child="Orders" msdata:parentkey="Member_id" msdata:childkey="buyer_id" msprop:Generator_UserChildTable="Orders" msprop:Generator_ChildPropName="GetOrdersRowsByFK__Orders__buyer_id__2B0A656D" msprop:Generator_UserRelationName="FK__Orders__buyer_id__2B0A656D" msprop:Generator_ParentPropName="MembershipRowByFK__Orders__buyer_id__2B0A656D" msprop:Generator_RelationVarName="relationFK__Orders__buyer_id__2B0A656D" msprop:Generator_UserParentTable="Membership" />
-      <msdata:Relationship name="FK__Orders__seller_i__2A164134" msdata:parent="Membership" msdata:child="Orders" msdata:parentkey="Member_id" msdata:childkey="seller_id" msprop:Generator_UserChildTable="Orders" msprop:Generator_ChildPropName="GetOrdersRowsByFK__Orders__seller_i__2A164134" msprop:Generator_UserRelationName="FK__Orders__seller_i__2A164134" msprop:Generator_ParentPropName="MembershipRowByFK__Orders__seller_i__2A164134" msprop:Generator_RelationVarName="relationFK__Orders__seller_i__2A164134" msprop:Generator_UserParentTable="Membership" />
+      <msdata:Relationship name="FK__Ratings__User_id__03F0984C" msdata:parent="Membership" msdata:child="Ratings" msdata:parentkey="Member_id" msdata:childkey="User_id" msprop:Generator_UserChildTable="Ratings" msprop:Generator_ChildPropName="GetRatingsRows" msprop:Generator_UserRelationName="FK__Ratings__User_id__03F0984C" msprop:Generator_RelationVarName="relationFK__Ratings__User_id__03F0984C" msprop:Generator_UserParentTable="Membership" msprop:Generator_ParentPropName="MembershipRow" />
+      <msdata:Relationship name="FK__Orders__buyer_id__2B0A656D" msdata:parent="Membership" msdata:child="Orders" msdata:parentkey="Member_id" msdata:childkey="buyer_id" msprop:Generator_UserChildTable="Orders" msprop:Generator_ChildPropName="GetOrdersRowsByFK__Orders__buyer_id__2B0A656D" msprop:Generator_UserRelationName="FK__Orders__buyer_id__2B0A656D" msprop:Generator_RelationVarName="relationFK__Orders__buyer_id__2B0A656D" msprop:Generator_UserParentTable="Membership" msprop:Generator_ParentPropName="MembershipRowByFK__Orders__buyer_id__2B0A656D" />
+      <msdata:Relationship name="FK__Orders__seller_i__2A164134" msdata:parent="Membership" msdata:child="Orders" msdata:parentkey="Member_id" msdata:childkey="seller_id" msprop:Generator_UserChildTable="Orders" msprop:Generator_ChildPropName="GetOrdersRowsByFK__Orders__seller_i__2A164134" msprop:Generator_UserRelationName="FK__Orders__seller_i__2A164134" msprop:Generator_RelationVarName="relationFK__Orders__seller_i__2A164134" msprop:Generator_UserParentTable="Membership" msprop:Generator_ParentPropName="MembershipRowByFK__Orders__seller_i__2A164134" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -1030,7 +1030,7 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, ti" +
@@ -1074,6 +1074,10 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
                 "itle, condition\r\nFROM      Machines\r\nWHERE   (title LIKE @keyword)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@keyword", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = "SELECT *FROM dbo.Machines";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1209,6 +1213,30 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(keyword));
             }
+            LongMeter_Machine.MachinesDataTable dataTable = new LongMeter_Machine.MachinesDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int Update1(LongMeter_Machine.MachinesDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[6];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual LongMeter_Machine.MachinesDataTable New() {
+            this.Adapter.SelectCommand = this.CommandCollection[6];
             LongMeter_Machine.MachinesDataTable dataTable = new LongMeter_Machine.MachinesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

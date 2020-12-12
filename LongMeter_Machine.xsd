@@ -156,6 +156,14 @@ WHERE   (title LIKE @keyword)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              <DbSource ConnectionRef="LongMeter_DataConnectionString (Settings)" DbObjectName="LongMeter_Data.dbo.Machines" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Update1" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="New" GeneratorSourceName="Update1" GetMethodModifier="Public" GetMethodName="New" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="New" UserSourceName="Update1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *FROM dbo.Machines</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
             </Sources>
           </TableAdapter>
         </Tables>
@@ -166,7 +174,7 @@ WHERE   (title LIKE @keyword)</CommandText>
   <xs:element name="LongMeter_Machine" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LongMeter_Machine" msprop:Generator_UserDSName="LongMeter_Machine">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Machines" msprop:Generator_TableClassName="MachinesDataTable" msprop:Generator_TableVarName="tableMachines" msprop:Generator_TablePropName="Machines" msprop:Generator_RowDeletingName="MachinesRowDeleting" msprop:Generator_RowChangingName="MachinesRowChanging" msprop:Generator_RowEvHandlerName="MachinesRowChangeEventHandler" msprop:Generator_RowDeletedName="MachinesRowDeleted" msprop:Generator_UserTableName="Machines" msprop:Generator_RowChangedName="MachinesRowChanged" msprop:Generator_RowEvArgName="MachinesRowChangeEvent" msprop:Generator_RowClassName="MachinesRow">
+        <xs:element name="Machines" msprop:Generator_TableClassName="MachinesDataTable" msprop:Generator_TableVarName="tableMachines" msprop:Generator_RowChangedName="MachinesRowChanged" msprop:Generator_TablePropName="Machines" msprop:Generator_RowDeletingName="MachinesRowDeleting" msprop:Generator_RowChangingName="MachinesRowChanging" msprop:Generator_RowEvHandlerName="MachinesRowChangeEventHandler" msprop:Generator_RowDeletedName="MachinesRowDeleted" msprop:Generator_RowClassName="MachinesRow" msprop:Generator_UserTableName="Machines" msprop:Generator_RowEvArgName="MachinesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Machine_id" msprop:Generator_ColumnVarNameInTable="columnMachine_id" msprop:Generator_ColumnPropNameInRow="Machine_id" msprop:Generator_ColumnPropNameInTable="Machine_idColumn" msprop:Generator_UserColumnName="Machine_id" type="xs:int" />
