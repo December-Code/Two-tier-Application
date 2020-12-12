@@ -88,6 +88,11 @@ namespace Two_tier_Application
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ordersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.Advertisement = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.advertisementBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.longMeter_Advertisement = new Two_tier_Application.LongMeter_Advertisement();
+            this.label16 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -100,7 +105,6 @@ namespace Two_tier_Application
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advertisementBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.longMeter_Advertisement = new Two_tier_Application.LongMeter_Advertisement();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
@@ -117,6 +121,8 @@ namespace Two_tier_Application
             this.Ratings = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.commentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.longMeter_Comments = new Two_tier_Application.LongMeter_Comments();
             this.label15 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.membershipBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
@@ -159,12 +165,6 @@ namespace Two_tier_Application
             this.tableAdapterManager2 = new Two_tier_Application.LongMeter_RatingsTableAdapters.TableAdapterManager();
             this.membershipTableAdapter2 = new Two_tier_Application.LongMeter_RatingsTableAdapters.MembershipTableAdapter();
             this.membershipTableAdapter3 = new Two_tier_Application.LongMeter_DataDataSet3TableAdapters.MembershipTableAdapter();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.advertisementBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button4 = new System.Windows.Forms.Button();
-            this.longMeter_Comments = new Two_tier_Application.LongMeter_Comments();
-            this.commentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.commentsTableAdapter = new Two_tier_Application.LongMeter_CommentsTableAdapters.CommentsTableAdapter();
             this.tabControl1.SuspendLayout();
             this.Orders.SuspendLayout();
@@ -180,12 +180,15 @@ namespace Two_tier_Application
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingNavigator)).BeginInit();
             this.ordersBindingNavigator.SuspendLayout();
             this.Advertisement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.advertisementBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Advertisement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advertisementDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advertisementBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Advertisement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.Ratings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.commentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Comments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.longMeter_DataDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource2)).BeginInit();
@@ -194,9 +197,6 @@ namespace Two_tier_Application
             ((System.ComponentModel.ISupportInitialize)(this.ratingsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.advertisementBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Comments)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.commentsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -742,6 +742,46 @@ namespace Two_tier_Application
             this.Advertisement.Text = "Advertisement";
             this.Advertisement.UseVisualStyleBackColor = true;
             // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button4.Location = new System.Drawing.Point(313, 391);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 23);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Pubilsh";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.DataSource = this.advertisementBindingSource1;
+            this.comboBox9.DisplayMember = "Advertisement_id";
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(166, 392);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(121, 23);
+            this.comboBox9.TabIndex = 15;
+            // 
+            // advertisementBindingSource1
+            // 
+            this.advertisementBindingSource1.DataMember = "Advertisement";
+            this.advertisementBindingSource1.DataSource = this.longMeter_Advertisement;
+            // 
+            // longMeter_Advertisement
+            // 
+            this.longMeter_Advertisement.DataSetName = "LongMeter_Advertisement";
+            this.longMeter_Advertisement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(36, 395);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(115, 15);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Advertisement_id :";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(634, 348);
@@ -848,11 +888,6 @@ namespace Two_tier_Application
             // 
             this.advertisementBindingSource.DataMember = "Advertisement";
             this.advertisementBindingSource.DataSource = this.longMeter_Advertisement;
-            // 
-            // longMeter_Advertisement
-            // 
-            this.longMeter_Advertisement.DataSetName = "LongMeter_Advertisement";
-            this.longMeter_Advertisement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
@@ -1021,6 +1056,16 @@ namespace Two_tier_Application
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(100, 23);
             this.comboBox8.TabIndex = 13;
+            // 
+            // commentsBindingSource
+            // 
+            this.commentsBindingSource.DataMember = "Comments";
+            this.commentsBindingSource.DataSource = this.longMeter_Comments;
+            // 
+            // longMeter_Comments
+            // 
+            this.longMeter_Comments.DataSetName = "LongMeter_Comments";
+            this.longMeter_Comments.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label15
             // 
@@ -1347,51 +1392,6 @@ namespace Two_tier_Application
             // 
             this.membershipTableAdapter3.ClearBeforeFill = true;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(36, 395);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(115, 15);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Advertisement_id :";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.DataSource = this.advertisementBindingSource1;
-            this.comboBox9.DisplayMember = "Advertisement_id";
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(166, 392);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 23);
-            this.comboBox9.TabIndex = 15;
-            // 
-            // advertisementBindingSource1
-            // 
-            this.advertisementBindingSource1.DataMember = "Advertisement";
-            this.advertisementBindingSource1.DataSource = this.longMeter_Advertisement;
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.Location = new System.Drawing.Point(313, 391);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 23);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Pubilsh";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // longMeter_Comments
-            // 
-            this.longMeter_Comments.DataSetName = "LongMeter_Comments";
-            this.longMeter_Comments.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // commentsBindingSource
-            // 
-            this.commentsBindingSource.DataMember = "Comments";
-            this.commentsBindingSource.DataSource = this.longMeter_Comments;
-            // 
             // commentsTableAdapter
             // 
             this.commentsTableAdapter.ClearBeforeFill = true;
@@ -1403,7 +1403,7 @@ namespace Two_tier_Application
             this.ClientSize = new System.Drawing.Size(800, 482);
             this.Controls.Add(this.tabControl1);
             this.Name = "Machine_Order";
-            this.Text = "Form2";
+            this.Text = "Order";
             this.Load += new System.EventHandler(this.Machine_Order_Load);
             this.tabControl1.ResumeLayout(false);
             this.Orders.ResumeLayout(false);
@@ -1423,14 +1423,17 @@ namespace Two_tier_Application
             this.ordersBindingNavigator.PerformLayout();
             this.Advertisement.ResumeLayout(false);
             this.Advertisement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.advertisementBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Advertisement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.advertisementDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.advertisementBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Advertisement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             this.Ratings.ResumeLayout(false);
             this.Ratings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.commentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Comments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.longMeter_DataDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membershipBindingSource2)).EndInit();
@@ -1440,9 +1443,6 @@ namespace Two_tier_Application
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.advertisementBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longMeter_Comments)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.commentsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
