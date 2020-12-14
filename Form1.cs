@@ -17,77 +17,46 @@ namespace Two_tier_Application
             InitializeComponent();
         }
 
-        private void machinesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void categoriesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.machinesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.longMeter_DataDataSet);
+            this.categoriesBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.business_dataDataSet);
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: 這行程式碼會將資料載入 'longMeter_Machine.Machines' 資料表。您可以視需要進行移動或移除。
-            this.machinesTableAdapter1.Fill(this.longMeter_Machine.Machines);
-            // TODO: 這行程式碼會將資料載入 'longMeter_DataDataSet.Machines' 資料表。您可以視需要進行移動或移除。
-            this.machinesTableAdapter.Fill(this.longMeter_DataDataSet.Machines);
+            // TODO: 這行程式碼會將資料載入 'business_dataDataSet1.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter1.Fill(this.business_dataDataSet1.Machines);
+            // TODO: 這行程式碼會將資料載入 'business_dataDataSet.Orders' 資料表。您可以視需要進行移動或移除。
+            this.ordersTableAdapter.Fill(this.business_dataDataSet.Orders);
+            // TODO: 這行程式碼會將資料載入 'business_dataDataSet.Machines' 資料表。您可以視需要進行移動或移除。
+            this.machinesTableAdapter.Fill(this.business_dataDataSet.Machines);
+            // TODO: 這行程式碼會將資料載入 'business_dataDataSet.Categories' 資料表。您可以視需要進行移動或移除。
+            this.categoriesTableAdapter.Fill(this.business_dataDataSet.Categories);
 
         }
 
-        private void Machine_id_SearchToolStripButton_Click(object sender, EventArgs e)
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
         {
-            if (toolStripComboBox.Text == "Machine_id")
+            try
             {
-                try
-                {
-                    this.machinesTableAdapter1.Machine_id_Search(this.longMeter_Machine.Machines, ((int)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(int)))));
-                }
-                catch (System.Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
-                }
+                this.machinesTableAdapter1.FillBy(this.business_dataDataSet1.Machines, ((int)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(int)))));
             }
-            else if (toolStripComboBox.Text == "category_id")
+            catch (System.Exception ex)
             {
-                try
-                {
-                    this.machinesTableAdapter1.Category_id_Search(this.longMeter_Machine.Machines, ((int)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(int)))));
-                }
-                catch (System.Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
-                }
+                System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-            else if (toolStripComboBox.Text == "price")
-            {
-                try
-                {
-                    this.machinesTableAdapter1.Price_Search(this.longMeter_Machine.Machines, ((double)(System.Convert.ChangeType(keywordToolStripTextBox.Text, typeof(double)))));
-                }
-                catch (System.Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
-                }
-            }
-            else if (toolStripComboBox.Text == "title")
-            {
-                try
-                {
-                    this.machinesTableAdapter1.Title_Search(this.longMeter_Machine.Machines, keywordToolStripTextBox.Text);
-                }
-                catch (System.Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
-                }
-            }
+
         }
 
-        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        private void keywordToolStripTextBox_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void fillByToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

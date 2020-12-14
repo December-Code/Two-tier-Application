@@ -50,8 +50,6 @@ namespace Two_tier_Application {
         
         private global::System.Data.DataRelation relationFK__Machines__catego__18EBB532;
         
-        private global::System.Data.DataRelation relationFK__Machines__Driver__19DFD96B;
-        
         private global::System.Data.DataRelation relationFK__Machines__locati__1AD3FDA4;
         
         private global::System.Data.DataRelation relationFK__Orders__buyer_id__2B0A656D;
@@ -458,7 +456,6 @@ namespace Two_tier_Application {
             }
             this.relationFK__Locations__count__7A672E12 = this.Relations["FK__Locations__count__7A672E12"];
             this.relationFK__Machines__catego__18EBB532 = this.Relations["FK__Machines__catego__18EBB532"];
-            this.relationFK__Machines__Driver__19DFD96B = this.Relations["FK__Machines__Driver__19DFD96B"];
             this.relationFK__Machines__locati__1AD3FDA4 = this.Relations["FK__Machines__locati__1AD3FDA4"];
             this.relationFK__Orders__buyer_id__2B0A656D = this.Relations["FK__Orders__buyer_id__2B0A656D"];
             this.relationFK__Orders__Machine___29221CFB = this.Relations["FK__Orders__Machine___29221CFB"];
@@ -507,10 +504,6 @@ namespace Two_tier_Application {
                         this.tableCategories.category_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableMachines.category_idColumn}, false);
             this.Relations.Add(this.relationFK__Machines__catego__18EBB532);
-            this.relationFK__Machines__Driver__19DFD96B = new global::System.Data.DataRelation("FK__Machines__Driver__19DFD96B", new global::System.Data.DataColumn[] {
-                        this.tableDriver.Driver_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableMachines.Driver_idColumn}, false);
-            this.Relations.Add(this.relationFK__Machines__Driver__19DFD96B);
             this.relationFK__Machines__locati__1AD3FDA4 = new global::System.Data.DataRelation("FK__Machines__locati__1AD3FDA4", new global::System.Data.DataColumn[] {
                         this.tableLocations.location_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableMachines.location_idColumn}, false);
@@ -1996,13 +1989,6 @@ namespace Two_tier_Application {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DriverRow FindByDriver_id(int Driver_id) {
-                return ((DriverRow)(this.Rows.Find(new object[] {
-                            Driver_id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 DriverDataTable cln = ((DriverDataTable)(base.Clone()));
                 cln.InitVars();
@@ -2044,10 +2030,7 @@ namespace Two_tier_Application {
                 base.Columns.Add(this.columnSalary);
                 this.columnLicense = new global::System.Data.DataColumn("License", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLicense);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnDriver_id}, true));
                 this.columnDriver_id.AllowDBNull = false;
-                this.columnDriver_id.Unique = true;
                 this.columnfirst_name.MaxLength = 2147483647;
                 this.columnlast_name.MaxLength = 2147483647;
                 this.columnGender.MaxLength = 2147483647;
@@ -2638,12 +2621,12 @@ namespace Two_tier_Application {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public MachinesRow AddMachinesRow(int Machine_id, CategoriesRow parentCategoriesRowByFK__Machines__catego__18EBB532, DriverRow parentDriverRowByFK__Machines__Driver__19DFD96B, LocationsRow parentLocationsRowByFK__Machines__locati__1AD3FDA4, int years, double price, string payment, string title, string condition) {
+            public MachinesRow AddMachinesRow(int Machine_id, CategoriesRow parentCategoriesRowByFK__Machines__catego__18EBB532, int Driver_id, LocationsRow parentLocationsRowByFK__Machines__locati__1AD3FDA4, int years, double price, string payment, string title, string condition) {
                 MachinesRow rowMachinesRow = ((MachinesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Machine_id,
                         null,
-                        null,
+                        Driver_id,
                         null,
                         years,
                         price,
@@ -2652,9 +2635,6 @@ namespace Two_tier_Application {
                         condition};
                 if ((parentCategoriesRowByFK__Machines__catego__18EBB532 != null)) {
                     columnValuesArray[1] = parentCategoriesRowByFK__Machines__catego__18EBB532[0];
-                }
-                if ((parentDriverRowByFK__Machines__Driver__19DFD96B != null)) {
-                    columnValuesArray[2] = parentDriverRowByFK__Machines__Driver__19DFD96B[0];
                 }
                 if ((parentLocationsRowByFK__Machines__locati__1AD3FDA4 != null)) {
                     columnValuesArray[3] = parentLocationsRowByFK__Machines__locati__1AD3FDA4[0];
@@ -4643,17 +4623,6 @@ namespace Two_tier_Application {
             public void SetLicenseNull() {
                 this[this.tableDriver.LicenseColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public MachinesRow[] GetMachinesRows() {
-                if ((this.Table.ChildRelations["FK__Machines__Driver__19DFD96B"] == null)) {
-                    return new MachinesRow[0];
-                }
-                else {
-                    return ((MachinesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Machines__Driver__19DFD96B"])));
-                }
-            }
         }
         
         /// <summary>
@@ -4891,17 +4860,6 @@ namespace Two_tier_Application {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__Machines__catego__18EBB532"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DriverRow DriverRow {
-                get {
-                    return ((DriverRow)(this.GetParentRow(this.Table.ParentRelations["FK__Machines__Driver__19DFD96B"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Machines__Driver__19DFD96B"]);
                 }
             }
             
@@ -7606,14 +7564,6 @@ SELECT Driver_id, first_name, last_name, Gender, age, Salary, License FROM Drive
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string first_name, string last_name, string Gender, global::System.Nullable<int> age, global::System.Nullable<int> Salary, global::System.Nullable<int> License, int Original_Driver_id, global::System.Nullable<int> Original_age, global::System.Nullable<int> Original_Salary, global::System.Nullable<int> Original_License) {
-            return this.Update(Original_Driver_id, first_name, last_name, Gender, age, Salary, License, Original_Driver_id, Original_age, Original_Salary, Original_License);
-        }
     }
     
     /// <summary>
@@ -8149,12 +8099,53 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, ti" +
                 "tle, condition FROM dbo.Machines";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM Orders WHERE [Machine_id]=@Original_Machine_id;\r\nDELETE FROM Machines" +
+                " WHERE [Machine_id]= @Original_Machine_id;";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Machine_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Machine_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"INSERT INTO [dbo].[Machines] ([Machine_id], [category_id], [location_id], [years], [price], [payment], [title], [condition]) VALUES (@Machine_id, @category_id, @location_id, @years, @price, @payment, @title, @condition);
+SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition FROM Machines WHERE (Machine_id = @Machine_id)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Machine_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Machine_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@category_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "category_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@years", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "years", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@price", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@payment", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "payment", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@title", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@condition", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "condition", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "dbo.UpdateQuery";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Machine_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@category_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@years", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@price", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@payment", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@title", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@condition", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Machine_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_category_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Driver_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_location_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_years", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_price", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_payment", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Driver_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_years", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8415,6 +8406,223 @@ SELECT Machine_id, category_id, Driver_id, location_id, years, price, payment, t
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int category_id, global::System.Nullable<int> Driver_id, int location_id, global::System.Nullable<int> years, double price, string payment, string title, string condition, int Original_Machine_id, int Original_category_id, global::System.Nullable<int> Original_Driver_id, int Original_location_id, global::System.Nullable<int> Original_years, double Original_price, string Original_payment) {
             return this.Update(Original_Machine_id, category_id, Driver_id, location_id, years, price, payment, title, condition, Original_Machine_id, Original_category_id, Original_Driver_id, Original_location_id, Original_years, Original_price, Original_payment);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteQuery(int Original_Machine_id) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(Original_Machine_id));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery_addM(int Machine_id, int category_id, int location_id, global::System.Nullable<int> years, double price, string payment, string title, string condition) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            command.Parameters[0].Value = ((int)(Machine_id));
+            command.Parameters[1].Value = ((int)(category_id));
+            command.Parameters[2].Value = ((int)(location_id));
+            if ((years.HasValue == true)) {
+                command.Parameters[3].Value = ((int)(years.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            command.Parameters[4].Value = ((double)(price));
+            if ((payment == null)) {
+                throw new global::System.ArgumentNullException("payment");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(payment));
+            }
+            if ((title == null)) {
+                throw new global::System.ArgumentNullException("title");
+            }
+            else {
+                command.Parameters[6].Value = ((string)(title));
+            }
+            if ((condition == null)) {
+                throw new global::System.ArgumentNullException("condition");
+            }
+            else {
+                command.Parameters[7].Value = ((string)(condition));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(
+                    global::System.Nullable<int> Machine_id, 
+                    global::System.Nullable<int> category_id, 
+                    global::System.Nullable<int> location_id, 
+                    global::System.Nullable<int> years, 
+                    global::System.Nullable<double> price, 
+                    string payment, 
+                    string title, 
+                    string condition, 
+                    global::System.Nullable<int> Original_Machine_id, 
+                    global::System.Nullable<int> Original_category_id, 
+                    global::System.Nullable<int> IsNull_Driver_id, 
+                    global::System.Nullable<int> Original_location_id, 
+                    global::System.Nullable<int> IsNull_years, 
+                    global::System.Nullable<double> Original_price, 
+                    string Original_payment, 
+                    global::System.Nullable<int> Original_Driver_id, 
+                    global::System.Nullable<int> Original_years) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((Machine_id.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(Machine_id.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((category_id.HasValue == true)) {
+                command.Parameters[2].Value = ((int)(category_id.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((location_id.HasValue == true)) {
+                command.Parameters[3].Value = ((int)(location_id.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((years.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(years.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((price.HasValue == true)) {
+                command.Parameters[5].Value = ((double)(price.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((payment == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(payment));
+            }
+            if ((title == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(title));
+            }
+            if ((condition == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(condition));
+            }
+            if ((Original_Machine_id.HasValue == true)) {
+                command.Parameters[9].Value = ((int)(Original_Machine_id.Value));
+            }
+            else {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((Original_category_id.HasValue == true)) {
+                command.Parameters[10].Value = ((int)(Original_category_id.Value));
+            }
+            else {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((IsNull_Driver_id.HasValue == true)) {
+                command.Parameters[11].Value = ((int)(IsNull_Driver_id.Value));
+            }
+            else {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((Original_location_id.HasValue == true)) {
+                command.Parameters[12].Value = ((int)(Original_location_id.Value));
+            }
+            else {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((IsNull_years.HasValue == true)) {
+                command.Parameters[13].Value = ((int)(IsNull_years.Value));
+            }
+            else {
+                command.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((Original_price.HasValue == true)) {
+                command.Parameters[14].Value = ((double)(Original_price.Value));
+            }
+            else {
+                command.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_payment == null)) {
+                command.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[15].Value = ((string)(Original_payment));
+            }
+            if ((Original_Driver_id.HasValue == true)) {
+                command.Parameters[16].Value = ((int)(Original_Driver_id.Value));
+            }
+            else {
+                command.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((Original_years.HasValue == true)) {
+                command.Parameters[17].Value = ((int)(Original_years.Value));
+            }
+            else {
+                command.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -10354,15 +10562,6 @@ SELECT Staff_id, first_name, last_name, Account_id FROM Staff WHERE (Staff_id = 
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._driverTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Driver.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._driverTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._locationsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Locations.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -10405,6 +10604,15 @@ SELECT Staff_id, first_name, last_name, Account_id FROM Staff WHERE (Staff_id = 
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._staffTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._driverTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Driver.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._driverTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -10460,14 +10668,6 @@ SELECT Staff_id, first_name, last_name, Account_id FROM Staff WHERE (Staff_id = 
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._driverTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Driver.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._driverTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._locationsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Locations.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -10505,6 +10705,14 @@ SELECT Staff_id, first_name, last_name, Account_id FROM Staff WHERE (Staff_id = 
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._staffTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._driverTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Driver.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._driverTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10550,6 +10758,14 @@ SELECT Staff_id, first_name, last_name, Account_id FROM Staff WHERE (Staff_id = 
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._driverTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Driver.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._driverTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._staffTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Staff.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -10587,14 +10803,6 @@ SELECT Staff_id, first_name, last_name, Account_id FROM Staff WHERE (Staff_id = 
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._locationsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._driverTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Driver.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._driverTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

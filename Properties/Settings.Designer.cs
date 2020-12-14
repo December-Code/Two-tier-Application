@@ -33,5 +33,16 @@ namespace Two_tier_Application.Properties {
                 return ((string)(this["LongMeter_DataConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=140.118.5.90,14433;Initial Catalog=LongMeter_Data;Persist Security In" +
+            "fo=True;User ID=SoftServer;Password=Softengin01")]
+        public string LongMeter_User {
+            get {
+                return ((string)(this["LongMeter_User"]));
+            }
+        }
     }
 }
